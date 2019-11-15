@@ -6,7 +6,7 @@
 			"icons": true,
 			"apps": [
 				{
-					"title": "Employee Self-Service",
+					"title": "Employee Self-Service 2",
 					"url": "https://ess.boston.gov/",
 					"icon": "/assets/apps/ess.svg",
 					"groups": [
@@ -14,7 +14,7 @@
 					]
 				},
 				{
-					"title": "The Hub",
+					"title": "The Hub 2",
 					"url": "https://hub.boston.gov/",
 					"icon": "/assets/apps/hub.svg"
 				},
