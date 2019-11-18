@@ -208,7 +208,8 @@
 				},
 				{
 					"title": "Group Management",
-					"url": "/group-management"
+					"url": "/group-management",
+					"target": "_blank"
 				}
 			]
 		},
