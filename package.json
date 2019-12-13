@@ -19,6 +19,8 @@
   "devDependencies": {
     "jest": "^24.9.0",
     "json-validation": "^1.0.4",
-    "jsonlint": "^1.6.3"
+    "jsonlint": "^1.6.3",
+    "crypto-json": "^2.0.2",
+    "dotenv": "^8.2.0"
   }
 }
