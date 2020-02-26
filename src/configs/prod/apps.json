@@ -208,13 +208,8 @@
 				},
 				{
 					"title": "Group Management",
-<<<<<<< HEAD:src/configs/prod/apps.json
-          "url": "/group-management",
-          "target": "_blank"
-=======
 					"url": "/group-management",
 					"target": "_blank"
->>>>>>> 1131f51... Added target attribute to group-mgmt (#1):apps.json
 				}
 			]
 		},
