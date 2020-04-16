@@ -1,6 +1,6 @@
 const validate_json = require('../tools/validateJson');
 const encrypt_json = require('../tools/encryptJson');
-// const decrypt_json = require('../tools/encryptJson');
+const decrypt_json = require('../tools/encryptJson');
 const config_dev = require('../configs/dev/apps.json');
 const config_test = require('../configs/test/apps.json');
 const config_prod = require('../configs/prod/apps.json');
@@ -19,13 +19,13 @@ test('Validate App PROD Config (JSON)', () => {
 
 test('Encode App DEV (JSON)', () => {
   const enc = encrypt_json(config_dev);
-  console.log('enc: ', enc);
+  // console.log('enc: ', enc);
   expect(enc.categories[0].title !== "Applications").toBe(true);
 });
 
-// test('Decode App DEV (JSON)', () => {
-//   const encrypted = encrypt_json(config_dev);
-//   console.log('encrypted: ', config_dev);
-//   console.log('decrypt: ', decrypt_json(encrypted).categories[0].title);
-//   expect(decrypt_json(encrypted).categories[0].title !== "Applications").toBe(true);
-// });
+test('Decode App DEV (JSON)', () => {
+  const encrypted = encrypt_json(config_dev);
+  // console.log('encrypted: ', config_dev);
+  // console.log('decrypt: ', decrypt_json(encrypted).categories[0].title);
+  expect(decrypt_json(encrypted).categories[0].title !== "Applications").toBe(true);
+});
