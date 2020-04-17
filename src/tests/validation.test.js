@@ -1,31 +1,25 @@
+const fs = require('fs');
+const path = require('path');
+const yaml = require('js-yaml');
 const validate_json = require('../tools/validateJson');
-const encrypt_json = require('../tools/encryptJson');
-const decrypt_json = require('../tools/encryptJson');
-const config_dev = require('../configs/dev/apps.json');
-const config_test = require('../configs/test/apps.json');
-const config_prod = require('../configs/prod/apps.json');
 
-test('Validate App DEV Config (JSON)', () => {
+test('Valid Config (DEV)', () => {
+  const config_dev = yaml.safeLoad(
+    fs.readFileSync(path.join(__dirname, "../configs/dev/apps.yaml"), "utf8")
+  );
   expect(validate_json(config_dev)).toBe(true);
 });
 
-test('Validate App TEST Config (JSON)', () => {
+test('Valid Config (TEST)', () => {
+  const config_test = yaml.safeLoad(
+    fs.readFileSync(path.join(__dirname, "../configs/test/apps.yaml"), "utf8")
+  );
   expect(validate_json(config_test)).toBe(true);
 });
 
-test('Validate App PROD Config (JSON)', () => {
+test('Valid Config (PROD)', () => {
+  const config_prod = yaml.safeLoad(
+    fs.readFileSync(path.join(__dirname, "../configs/prod/apps.yaml"), "utf8")
+  );
   expect(validate_json(config_prod)).toBe(true);
-});
-
-test('Encode App DEV (JSON)', () => {
-  const enc = encrypt_json(config_dev);
-  // console.log('enc: ', enc);
-  expect(enc.categories[0].title !== "Applications").toBe(true);
-});
-
-test('Decode App DEV (JSON)', () => {
-  const encrypted = encrypt_json(config_dev);
-  // console.log('encrypted: ', config_dev);
-  // console.log('decrypt: ', decrypt_json(encrypted).categories[0].title);
-  expect(decrypt_json(encrypted).categories[0].title !== "Applications").toBe(true);
 });

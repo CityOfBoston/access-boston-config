@@ -4,6 +4,9 @@ const password = config && config.password ? config.password : "$CRYPTO_PASSWORD
 const keys = [];
 const algorithm = config && config.password ? config.algorithm : "$CRYPTO_ALGO";
 const encoding = config && config.password ? config.encoding : "$CRYPTO_ENCODING";
+console.log('password: ', password);
+console.log('algorithm: ', algorithm);
+console.log('encoding: ', encoding);
 
 const encrypt_json = source => {
   return cryptoJSON.encrypt(
