@@ -13,3 +13,12 @@ jobs:
   include:
     - name: Javascript Tests
       script: npm run test
+deploy:
+  - provider: s3
+    skip_cleanup: true
+    access_key_id: "$AWS_ACCESS_KEY_ID"
+    secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+    bucket: cob-digital-apps-staging-static
+    region: "$AWS_DEFAULT_REGION"
+    local_dir: src/configs
+    upload-dir: access-boston-config
