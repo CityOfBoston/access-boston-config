@@ -1,3 +1,5 @@
+os: linux
+dist: xenial
 language: node_js
 node_js:
 - '11.14.0'
@@ -16,13 +18,13 @@ jobs:
     - stage: deploy
       deploy:
         - provider: s3
-          skip_cleanup: true
+          cleanup: true
           access_key_id: "$AWS_ACCESS_KEY_ID"
           secret_access_key: "$AWS_SECRET_ACCESS_KEY"
           bucket: cob-digital-apps-staging-static
           region: "$AWS_DEFAULT_REGION"
           local_dir: src/configs
-          upload-dir: access-boston-config
+          upload_dir: access-boston-config
 
 notifications:
   slack: cityofboston-doit:azFYl0Jini0k7aZOT3nexuNO
