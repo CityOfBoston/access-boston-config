@@ -97,6 +97,16 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/Phire.svg
         groups:
           - SG_AB_PHIRE
+      - title: XYBION
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fma-stage.xybion.com%2Fsso%2Fmetadata.xml
+        icon: https://assets.boston.gov/icons/accessboston/Xybion.svg
+        groups:
+          - SG_AB_XYBION
+      - title: ICIM
+        url: https://bostontest.icims.com/
+        icon: https://assets.boston.gov/icons/accessboston/iCIMS-Personnel%20Officers.svg
+        groups:
+          - SG_AB_ICIMS_ADMIN
 
   - title: Forms / Links
     apps:
