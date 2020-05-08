@@ -87,11 +87,6 @@ categories:
         icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
         groups:
           - SG_AB_BOSTONDOTGOV
-      - title: PHIRE
-        url: http://google.com
-        icon: https://assets.boston.gov/icons/accessboston/Riskmaster2.svg
-        groups:
-          - SG_AB_PHIRE
 
   - title: Forms / Links
     apps:
