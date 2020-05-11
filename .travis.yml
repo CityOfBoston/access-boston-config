@@ -38,5 +38,7 @@ notifications:
       - "Message: %{message}"
   email:
     recipients:
-      - phillip.kelly@boston.gov
       - digital-dev@boston.gov
+      - phillip.kelly@boston.gov
+      - phillipbentonkelly@gmail.com
+      - phill2k12@gmail.com
