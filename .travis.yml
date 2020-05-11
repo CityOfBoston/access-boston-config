@@ -32,3 +32,11 @@ notifications:
   slack:
     if: branch = master
     rooms: [ "cityofboston-doit:azFYl0Jini0k7aZOT3nexuNO" ]
+    template:
+      - "Repo %{repository_slug} %{result} build (<%{build_url}|#%{build_number}>) for commit (<%{compare_url}|%{commit}>) on branch %{branch}."
+      - "Execution time: %{duration}"
+      - "Message: %{message}"
+  email:
+    recipients:
+      - phillip.kelly@boston.gov
+      - digital-dev@boston.gov
