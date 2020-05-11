@@ -29,4 +29,6 @@ jobs:
           upload_dir: access-boston-config
 
 notifications:
-  slack: cityofboston-doit:azFYl0Jini0k7aZOT3nexuNO
+  slack:
+    if: branch = master
+    rooms: [ "cityofboston-doit:azFYl0Jini0k7aZOT3nexuNO" ]
