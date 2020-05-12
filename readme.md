@@ -13,13 +13,16 @@
 [commits_page_pass]: ./src/images/commits_page_pass.png "Commit Page > Build Passed"
 [commits_page_fail]: ./src/images/commits_page_fail.png "Commit Page > Build Failed"
 
+We created this repository to manage changes to the Access-Boston dashboard by editing the config files for each of the environments runs on. The following are the are steps needed to commit changes, this repo will then notify the digital team that a new deploy to AWS is ready to be kicked of
+
 ### Edit and Deploy Process
 
 ![Repo][repo]
 
-1. From the repository landing page, edit the config file for the environment (dev/test/prod) you want to change, navigate from 'src/config[enviroment-to-edit]'
+1. From the repository landing page, edit the config file for the environment (dev/test/prod) you want to change, by going from the 'src' and the 'config' folder; the click on the folder for the environment you want to edit.
    - ![Configs Directory][config_dir]
 2. Click on the 'apps.yaml' file, from the details view click the 'Edit this File' icon. ![Apps File][apps_file]![Edit][edit]
+   
    Adding new links require 3 of the following fields:
    - title
    - url
@@ -27,6 +30,7 @@
    - *icon
   
    *Icon is require for links in the 'Apps' section, at the top of the file.
+   
    *Groups is a list of groups of people with access that application. The formatting should follow this style:
    groups:
      - SB_AB_APPGROUP_1
