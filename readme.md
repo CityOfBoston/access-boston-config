@@ -14,7 +14,13 @@
 [commits_page_fail]: ./src/images/commits_page_fail.png "Commit Page > Build Failed"
 [groups_syntax]: ./src/images/groups_syntax.png "Groups Syntax"
 
-We created this repository to manage changes to the Access-Boston dashboard by editing the config files for each of the environments runs on. The following are the are steps needed to commit changes, this repo will then notify the digital team that a new deploy to AWS is ready to be kicked of
+This repository exists to manage changes to the "front end" side of the Access Boston website without the need of a developer. The changes that can be made are for: application icons, application names, application links, and application access/assigned security group. The changes will be made by editing the "config files" for each of the website environments (i.e. development, test, production). The changes need to be made on each environment separately. The following are step-by-step instructions on how to make these edits. 
+
+Once these edits are made and saved there will be an automated notification to the digital team. The digital team will initiate the site to be 're-built'. The changes should appear on the Access Boston site within 30-60 minutes.
+
+It is encouraged to make these changes Monday-Firday, 9 a.m.-5 p.m., if possible, to ensure that if something goes run that there are available staff to help resolve.
+
+Reilly, add links to the specific configuation files for each environment.
 
 ### Edit and Deploy Process
 
