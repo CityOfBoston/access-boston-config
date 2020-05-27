@@ -92,6 +92,11 @@ categories:
         icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
         groups:
           - SG_AB_BOSTONDOTGOV
+      - title: Phire
+        url: https://phire.boston.gov/psp/psphpd0/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT
+        icon: https://assets.boston.gov/icons/accessboston/Phire.svg
+        groups:
+          - SG_AB_PHIRE
 
   - title: Forms / Links
     apps:
