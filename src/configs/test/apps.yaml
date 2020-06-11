@@ -111,7 +111,7 @@ categories:
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=stagingbostonma.webqademo.com
         icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
         groups:
-          - SG_AB_GovQA
+          - SG_AB_GOVQA
 
   - title: Forms / Links
     apps:
