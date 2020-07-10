@@ -118,6 +118,8 @@ categories:
         url: https://assetessentials.dudesolutions.com/CityOfBoston/MyRequest/Add
         agencies:
           - CH
+        groups:
+          - SG_AB_BLDGMAINTREQ
       - title: Request FN Access
         url: https://identity.boston.gov/identityiq/requestPsfn.jsf
         groups:
