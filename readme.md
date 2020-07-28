@@ -20,8 +20,6 @@ Once these edits are made and saved there will be an automated notification to t
 
 It is encouraged to make these changes Monday-Firday, 9 a.m.-5 p.m., if possible, to ensure that if something goes run that there are available staff to help resolve.
 
-Reilly, add links to the specific configuation files for each environment.
-
 ### Edit and Deploy Process
 
 ![Repo][repo]
