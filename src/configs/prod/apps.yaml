@@ -82,6 +82,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/e-builder.svg
         groups:
           - SG_AB_EBUILDER
+      - title: Riskmaster
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Frmaprdcityofboston.dxc-ins.com
+        icon: https://assets.boston.gov/icons/accessboston/Riskmaster2.svg
+        groups:
+          - SG_AB_RISKMASTER
       - title: Asset Essentials
         url: https://assetessentials.dudesolutions.com/CityOfBoston/
         icon: https://assets.boston.gov/icons/accessboston/asset_essentials.svg
