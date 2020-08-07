@@ -102,6 +102,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/Phire.svg
         groups:
           - SG_AB_PHIRE
+      - title: Xybion
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fma.xybion.com%2Fsso%2Fmetadata.xml
+        icon: https://assets.boston.gov/icons/accessboston/Xybion.svg
+        groups:
+          - SG_AB_XYBION
 
   - title: Forms / Links
     apps:
