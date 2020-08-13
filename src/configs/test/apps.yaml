@@ -48,7 +48,7 @@ categories:
         url: https://boston.maps.arcgis.com/
         icon: https://assets.boston.gov/icons/accessboston/boston-maps.svg
       - title: BAIS FN
-        url: https://baisfndev.cityhall.boston.cob/psp/idmdevfn/EMPLOYEE/ERP/h/?tab=DEFAULT
+        url: https://baisfntst.cityhall.boston.cob/psp/idmtstfn/EMPLOYEE/ERP/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg
         groups:
           - SG_AB_PSFN
