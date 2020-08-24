@@ -111,7 +111,7 @@ categories:
         url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=bostonma.govqa.us
         icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
         groups:
-          - SG_AB_GOVQA
+          - SG_AB_GovQA
 
   - title: Forms / Links
     apps:
