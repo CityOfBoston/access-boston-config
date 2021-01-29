@@ -112,6 +112,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
         groups:
           - SG_AB_GOVQA
+      - title: CyberArk
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=PasswordVault
+        icon: https://assets.boston.gov/icons/accessboston/password.svg
+        groups:
+          - SG_AB_GRPMGMT_CyberArk
 
   - title: Forms / Links
     apps:
