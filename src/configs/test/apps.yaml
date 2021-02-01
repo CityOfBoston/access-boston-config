@@ -116,7 +116,7 @@ categories:
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=PasswordVault
         icon: https://assets.boston.gov/icons/accessboston/password.svg
         groups:
-          - SG_AB_GRPMGMT_CyberArk
+          - SG_AB_GRPMGMT_CYBERARK
 
   - title: Forms / Links
     apps:
