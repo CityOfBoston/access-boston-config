@@ -143,6 +143,9 @@ categories:
       - title: Group Management
         url: /group-management
         target: _blank
+      - title: Group Management - Development Test (Phill K.)
+        url: /group-management
+        target: _blank
 
   - title: Manager Tools
     apps:
