@@ -53,7 +53,7 @@ categories:
         groups:
           - SG_AB_PSFN
       - title: BAIS HCM
-        url: https://baishcmdev.boston.gov/psp/baishcmtst/EMPLOYEE/HRMS/h/?tab=DEFAULT
+        url: https://baishcmdev.boston.gov/psp/baishcmdev/EMPLOYEE/HRMS/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-hcm.svg
         groups:
           - SG_AB_PSHCM
