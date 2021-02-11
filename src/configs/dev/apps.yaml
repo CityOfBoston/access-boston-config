@@ -48,12 +48,12 @@ categories:
         url: https://boston.maps.arcgis.com/
         icon: https://assets.boston.gov/icons/accessboston/boston-maps.svg
       - title: BAIS FN
-        url: https://baisfndev.cityhall.boston.cob/psp/idmdevfn/EMPLOYEE/ERP/h/?tab=DEFAULT
+        url: https://baisfndev.boston.gov/psp/idmdevfn/EMPLOYEE/ERP/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg
         groups:
           - SG_AB_PSFN
       - title: BAIS HCM
-        url: https://baishcmdev.cityhall.boston.cob/psp/baishcmdev/EMPLOYEE/HRMS/h/?tab=DEFAULT
+        url: https://baishcmdev.boston.gov/psp/baishcmtst/EMPLOYEE/HRMS/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-hcm.svg
         groups:
           - SG_AB_PSHCM
