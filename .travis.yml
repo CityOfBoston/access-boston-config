@@ -27,6 +27,15 @@ jobs:
           region: "$AWS_DEFAULT_REGION"
           local_dir: src/configs
           upload_dir: access-boston-config
+        - provider: s3
+          on:
+            branch: master
+          cleanup: true
+          access_key_id: "$AWS_ACCESS_KEY_ID"
+          secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+          region: "$AWS_DEFAULT_REGION"
+          bucket: cob-digital-apps-access-boston-config-dev
+          local_dir: src/configs/dev
 
 notifications:
   slack:
