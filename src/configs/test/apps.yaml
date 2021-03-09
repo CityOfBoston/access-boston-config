@@ -6,8 +6,6 @@ categories:
       - title: Employee Self-Service
         url: https://ess.boston.gov/
         icon: https://assets.boston.gov/icons/accessboston/ess.svg
-        groups:
-          - SG_AB_ESS
       - title: The Hub
         url: http://hub-dev.boston.gov/saml_login
         icon: https://assets.boston.gov/icons/accessboston/hub.svg
@@ -24,13 +22,6 @@ categories:
       - title: Current Job Openings
         url: https://employeeconnect-boston.icims.com/
         icon: https://assets.boston.gov/icons/accessboston/job-openings.svg
-        groups:
-          - SG_AB_ICIMS
-      - title: Current Job Openings
-        icon: https://assets.boston.gov/icons/accessboston/job-openings.svg
-        url: https://careercenter-boston.icims.com/jobs/
-        groups:
-          - SG_AB_ALLSPONSORED
       - title: Career Center
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=icims.com
         icon: https://assets.boston.gov/icons/accessboston/career-center.svg
@@ -42,8 +33,6 @@ categories:
       - title: Employee Training
         url: https://login.frontlineeducation.com/sso/cityofboston
         icon: https://assets.boston.gov/icons/accessboston/employee-training.svg
-        groups:
-          - SG_AB_MLP
       - title: Boston Maps
         url: https://boston.maps.arcgis.com/
         icon: https://assets.boston.gov/icons/accessboston/boston-maps.svg
