@@ -112,6 +112,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
         groups:
           - SG_AB_GOVQA
+      - title: ScerIS
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Asso%3AScerIS
+        icon: https://assets.boston.gov/icons/accessboston/sceris.svg
+        groups:
+          - SG_AB_Sceris
 
   - title: Forms / Links
     apps:
