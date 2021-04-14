@@ -117,6 +117,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/sceris.svg
         groups:
           - SG_AB_Sceris
+      - title: Boston Gives Back
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fwww.philanthropycloud.com
+        icon: https://assets.boston.gov/icons/accessboston/employee_giving_unitedway.svg
+        groups:
+          - SG_AB_UNITEDWAY
 
   - title: Forms / Links
     apps:
