@@ -113,7 +113,7 @@ categories:
         groups:
           - SG_AB_GOVQA
       - title: CyberArk
-        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=PasswordVault
+        url: https://zparkpvwa01.cityhall.boston.cob/PasswordVault/auth/saml
         icon: https://assets.boston.gov/icons/accessboston/password.svg
         groups:
           - SG_AB_GRPMGMT_CYBERARK
