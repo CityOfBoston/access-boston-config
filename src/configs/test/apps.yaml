@@ -122,6 +122,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/employee_giving_unitedway.svg
         groups:
           - SG_AB_UNITEDWAY
+      - title: ServiceNow
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostondev.service-now.com
+        icon: https://assets.boston.gov/icons/accessboston/service_now.svg
+        groups:
+          - SG_AB_SERVICENOW
 
   - title: Forms / Links
     apps:
