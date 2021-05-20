@@ -53,7 +53,7 @@ categories:
         groups:
           - SG_AB_TABLEAU
       - title: BAIS FN
-        url: https://baisfn.cityhall.boston.cob/psp/prdfn/EMPLOYEE/ERP/h/?tab=DEFAULT
+        url: https://fn.boston.gov/psp/prdfn/EMPLOYEE/ERP/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg
         groups:
           - SG_AB_PSFN
