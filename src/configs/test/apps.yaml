@@ -127,6 +127,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/featured_guide.svg
         groups:
           - SG_AB_SERVICENOW
+      - title: V3
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Aauth0%3Av3locity%3Abrs-test-provider
+        icon: https://assets.boston.gov/icons/accessboston/v3.svg
+        groups:
+          - SG_AB_V3
 
   - title: Forms / Links
     apps:
