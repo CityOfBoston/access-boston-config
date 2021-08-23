@@ -123,7 +123,7 @@ categories:
         groups:
           - SG_AB_UNITEDWAY
       - title: ServiceNow
-        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostondev.service-now.com
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostontest.service-now.com
         icon: https://assets.boston.gov/icons/accessboston/featured_guide.svg
         groups:
           - SG_AB_SERVICENOW
@@ -132,6 +132,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/v3.svg
         groups:
           - SG_AB_V3
+      - title: COVID Compliance
+        url: https://cibostontest.service-now.con/covid
+        icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
+        groups:
+          - SG_AB_COVIDPRTL
 
   - title: Forms / Links
     apps:
