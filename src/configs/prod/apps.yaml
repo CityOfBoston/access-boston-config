@@ -127,6 +127,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/featured_guide.svg
         groups:
           - SG_AB_SNOWADMIN
+      - title: COVID Compliance
+        url: https://ciboston.service-now.com/covid
+        icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
+        groups:
+          - SG_AB_COVIDPRTL
 
   - title: Forms / Links
     apps:
