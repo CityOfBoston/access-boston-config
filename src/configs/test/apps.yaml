@@ -135,8 +135,6 @@ categories:
       - title: COVID Compliance
         url: https://cibostontest.service-now.com/covid
         icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
-        groups:
-          - SG_AB_COVIDPRTL
 
   - title: Forms / Links
     apps:
