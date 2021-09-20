@@ -63,7 +63,7 @@ categories:
         groups:
           - SG_AB_PSHCM
       - title: Hyperion
-        url: https://login.us2.oraclecloud.com/oam/server/obrareq.cgi?encquery%3Dv2GuCFxM8VxsxDZPK9HzUGyy9Q3kTEgTTNlLlAmtoZTwncih0HU8NAbYsRh9raKXKy8d7P4g6V6FY84QopZtihSoEOcPDIVU7qktPzNiMf87zkN0Hm9YU%2BT%2B3ytwl%2FKTMsgQpsowiFHZDm13DFTGawpK%2B%2Bt3RL%2F3YiNDK33gCZnp9AZw%2Fm5OFX8d9xf%2BP8q9mlMEN3SrirXdsgAq4Jzli5LbTH38nJTp9y0kYPR1cnwH8VP80yul1ZxpngYMTatK3Z613FGf4luKZdL0G9560UC5cdbxKo3Rqhwp76BvyRFaQ%2B%2F%2FhwI3PIWWdLcyR4scKux9x5p5H2GePV7xJSst0g%3D%3D%20agentid%3DPlanning_WG%20ver%3D1%20crmethod%3D2
+        url: https://planning-a423759.pbcs.us2.oraclecloud.com/workspace
         icon: https://assets.boston.gov/icons/accessboston/hyperion.svg
         groups:
           - SG_AB_HYPERION
