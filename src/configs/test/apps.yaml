@@ -127,14 +127,19 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/featured_guide.svg
         groups:
           - SG_AB_SNOWADMIN
+      - title: COVID Compliance
+        url: https://cibostontest.service-now.com/covid
+        icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
       - title: V3
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Aauth0%3Av3locity%3Abrs-test-provider
         icon: https://assets.boston.gov/icons/accessboston/v3.svg
         groups:
           - SG_AB_V3
-      - title: COVID Compliance
-        url: https://cibostontest.service-now.com/covid
-        icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
+      - title: Avolve
+        url: http://boston-ma-us-test.avolvecloud.net/Portal/
+        icon: https://assets.boston.gov/icons/accessboston/avolve.svg
+        groups:
+          - SG_AB_AVOLVE
 
   - title: Forms / Links
     apps:
