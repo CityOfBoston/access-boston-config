@@ -92,6 +92,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/password.svg
         groups:
           - SG_AB_GRPMGMT_CYBERARK
+      - title: Avolve
+        url: http://boston-ma-us-test.avolvecloud.net/Portal/
+        icon: https://assets.boston.gov/icons/accessboston/avolve.svg
+        groups:
+          - SG_AB_Avolve
 
   - title: Forms / Links
     apps:
