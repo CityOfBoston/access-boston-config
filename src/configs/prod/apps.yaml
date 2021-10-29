@@ -131,7 +131,7 @@ categories:
         url: https://ciboston.service-now.com/covid
         icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
       - title: V3
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Aauth0%3Av3locity%3Abrs-prod-provider
+        url: https://brsprod.v3locity.com/app
         icon: https://assets.boston.gov/icons/accessboston/v3.svg
         groups:
           - SG_AB_V3
