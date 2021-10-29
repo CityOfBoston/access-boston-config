@@ -96,7 +96,7 @@ categories:
         url: http://boston-ma-us-test.avolvecloud.net/Portal/
         icon: https://assets.boston.gov/icons/accessboston/avolve.svg
         groups:
-          - SG_AB_Avolve
+          - SG_AB_AVOLVE
 
   - title: Forms / Links
     apps:
