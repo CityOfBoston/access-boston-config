@@ -97,6 +97,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/avolve.svg
         groups:
           - SG_AB_AVOLVE
+      - title: Tableau
+        url: https://sso-dev.boston.gov/idp/startSSO.ping?PartnerSpId=http%3A%2F%2FzDTableau01
+        icon: https://assets.boston.gov/icons/accessboston/tableau.svg
+        groups:
+          - SG_AB_TABLEAU
 
   - title: Forms / Links
     apps:
