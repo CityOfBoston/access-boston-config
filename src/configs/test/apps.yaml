@@ -3,6 +3,11 @@ categories:
     show_request_access_link: false
     icons: true
     apps:
+      - title: Beacon
+        url: https://cibostontest.service-now.com/cob
+        icon: https://assets.boston.gov/icons/accessboston/lighthouse.svg
+        groups:
+          - SG_AB_ESS
       - title: Employee Self-Service
         url: https://ess.boston.gov/
         icon: https://assets.boston.gov/icons/accessboston/ess.svg
@@ -125,11 +130,6 @@ categories:
       - title: ServiceNow
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostontest.service-now.com
         icon: https://assets.boston.gov/icons/accessboston/ship_wheel.svg
-        groups:
-          - SG_AB_SNOWADMIN
-      - title: Beacon
-        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostontest.service-now.com
-        icon: https://assets.boston.gov/icons/accessboston/lighthouse.svg
         groups:
           - SG_AB_SNOWADMIN
       - title: V3
