@@ -127,7 +127,7 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/employee_giving_unitedway.svg
         groups:
           - SG_AB_UNITEDWAY
-      - title: ServiceNow
+      - title: ServiceNow - Lightkeeper
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostontest.service-now.com
         icon: https://assets.boston.gov/icons/accessboston/ship_wheel.svg
         groups:
