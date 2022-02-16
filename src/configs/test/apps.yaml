@@ -121,11 +121,6 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
         groups:
           - SG_AB_GOVQA
-      - title: CyberArk
-        url: https://ztarkpvwa01.iam-ad-test.cob/PasswordVault/auth/saml
-        icon: https://assets.boston.gov/icons/accessboston/password.svg
-        groups:
-          - SG_AB_CYBERARK
       - title: Employee Giving
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fwww.philanthropycloud.com
         icon: https://assets.boston.gov/icons/accessboston/employee_giving_unitedway.svg
