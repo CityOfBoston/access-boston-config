@@ -137,7 +137,7 @@ categories:
           - SG_AB_V3
           - SG_AB_GRPMGMT_V3
       - title: CyberArk
-        url: https://zparkpvwa01.cityhall.boston.cob/PasswordVault
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=PasswordVault
         icon: https://assets.boston.gov/icons/accessboston/cyberark.svg
         groups:
           - SG_AB_CYBERARK
