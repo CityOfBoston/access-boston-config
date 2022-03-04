@@ -150,10 +150,14 @@ categories:
           - SG_AB_SPONSOR
       - title: FleetHub
         url: http://boston.getlocalmotion.com/
+        groups:
+          - SG_AB_ALLSPONSPONSERED
         agencies:
           - CH
       - title: International Travel
         url: https://goo.gl/forms/Xobh9aZeGXSnKH2m2
+        groups:
+          - SG_AB_ALLSPONSPONSERED
         agencies:
           - BPD
           - BFD
@@ -164,6 +168,7 @@ categories:
           - CH
         groups:	
           - SG_AB_BLDGMAINTREQ
+          - SG_AB_ALLSPONSPONSERED
       - title: Request FN Access
         url: https://identity.boston.gov/identityiq/requestPsfn.jsf
         groups:
@@ -187,6 +192,7 @@ categories:
         url: https://identity.boston.gov/identityiq/viewUserIdentityonly.jsf
         groups:
           - SG_AB_SERVICEDESK_USERS
+          - SG_AB_ALLSPONSPONSERED
       - title: Edit Group
         url: "#"
         groups:
