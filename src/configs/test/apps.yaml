@@ -155,7 +155,7 @@ categories:
         groups:
           - SG_AB_CYBERARK
       - title: Tanium
-        url: boston.cloud.tanium.com
+        url: https://boston.cloud.tanium.com
         icon: https://assets.boston.gov/icons/experiential_icons/secure.svg
         groups: 
           - SG_AB_TANIUM
