@@ -9,7 +9,7 @@ categories:
         groups:
           - SG_AB_ESS
       - title: Employee Self-Service
-        url: https://ess.boston.gov/
+        url: https://ess-awsdev.boston.gov
         icon: https://assets.boston.gov/icons/accessboston/ess.svg
         groups:
           - SG_AB_ESS
