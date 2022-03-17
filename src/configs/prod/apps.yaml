@@ -147,7 +147,7 @@ categories:
         groups: 
           - SG_AB_TANIUM
       - title: FHE Salesforce
-        url: https://cob--uat.my.salesforce.com/
+        url: https://cob.mysalesforce.com
         icon: https://assets.boston.gov/icons/experiential_icons/house_2.svg
         groups:
           - SG_AB_FHESALESFORCE
