@@ -97,10 +97,15 @@ categories:
         groups:
           - SG_AB_ASSETESSENTIALS
       - title: Edit Boston.gov
-        url: https://d8-stg.boston.gov/saml_login
+        url: https://d8-stg.boston.gov/saml_login?ReturnTo=https://d8-stg.boston.gov/admin/workbench
         icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
         groups:
           - SG_AB_BOSTONDOTGOV
+          - SG_AB_DRUPAL_ADMIN
+          - SG_AB_DRUPAL_CONTENTEDITOR
+          - SG_AB_DRUPAL_CONTENTAUTHOR
+          - SG_AB_DRUPAL_METROAUTHOR
+          - SG_AB_DRUPAL
       - title: Phire
         url: https://testphire.boston.gov/psp/psphpt0/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/Phire.svg
