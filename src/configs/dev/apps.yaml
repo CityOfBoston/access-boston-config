@@ -92,7 +92,10 @@ categories:
         icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
         groups:
           - SG_AB_BOSTONDOTGOV
-          - SG_AB_GRPMGMT_DRUPAL
+          - SG_AB_DRUPAL_ADMIN
+          - SG_AB_DRUPAL_CONTENTEDITOR
+          - SG_AB_DRUPAL_CONTENTAUTHOR
+          - SG_AB_DRUPAL_METROAUTHOR
           - SG_AB_DRUPAL
       - title: CyberArk
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=PasswordVault
