@@ -88,7 +88,7 @@ categories:
         groups:
           - SG_AB_RISKMASTER
       - title: Edit Boston.gov
-        url: https://d8-dev.boston.gov/saml_login
+        url: https://d8-dev.boston.gov/saml_login?ReturnTo=https://d8-dev.boston.gov/admin/workbench
         icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
         groups:
           - SG_AB_BOSTONDOTGOV
