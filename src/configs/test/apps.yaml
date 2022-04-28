@@ -169,6 +169,11 @@ categories:
         icon: https://assets.boston.gov/icons/experiential_icons/house_2.svg
         groups:
           - SG_AB_FHESALESFORCE
+      - title: Confirm Identity
+        url: /identity-verification
+        icon: https://assets.boston.gov/icons/accessboston/identity_verification.svg
+        groups:
+          - SG_AB_CONFIRMID
 
   - title: Forms / Links
     apps:
