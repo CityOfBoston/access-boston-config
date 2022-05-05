@@ -41,7 +41,7 @@ categories:
         groups:
           - SG_AB_ALLSPONSORED
       - title: Career Center
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=icims.com
+        url: https://boston.icims.com/icims2/servlet/icims2?module=Root&action=universalLogin&sso_connection=hs-6405-saml
         icon: https://assets.boston.gov/icons/accessboston/career-center.svg
         groups:
           - SG_AB_CAREERCTR
