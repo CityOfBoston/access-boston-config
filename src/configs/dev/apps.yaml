@@ -117,6 +117,12 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/ship_wheel.svg
         groups:
           - SG_AB_SNOWADMIN
+      - title: Confirm ID
+        url: /confirmid
+        target: _blank
+        icon: https://assets.boston.gov/icons/accessboston/identity_verification.svg
+        groups:
+          - SG_AB_CONFIRMID
 
   - title: Forms / Links
     apps:
