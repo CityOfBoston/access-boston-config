@@ -1,7 +1,7 @@
 notice:
   label: 'Notice'
   pretext: ''
-  text: 'BAIS cutover is scheduled for May 19 - 22. The BAIS HCM, BAIS FN, and Employee Self-Service (ESS) applications will not be available during that time.'
+  text: 'BAIS Modernization cutover is scheduled from May 18 at 2 p.m. to May 23. The BAIS HCM, BAIS FN, and Employee Self-Service (ESS) applications will not be available during that time.'
 categories:
   - title: Applications
     show_request_access_link: false
