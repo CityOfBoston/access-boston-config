@@ -62,12 +62,12 @@ categories:
         groups:
           - SG_AB_TABLEAU
       - title: BAIS FN
-        url: https://fn.boston.gov/psp/prdfn/EMPLOYEE/ERP/h/?tab=DEFAULT
+        url: https://fn.boston.gov/psp/psfnprd/EMPLOYEE/ERP/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg
         groups:
           - SG_AB_PSFN
       - title: BAIS HCM
-        url: https://hcm.boston.gov/psp/pshrpd3/EMPLOYEE/HRMS/h/?tab=DEFAULT
+        url: https://hcm.boston.gov/psp/pshrprd/EMPLOYEE/HRMS/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-hcm.svg
         groups:
           - SG_AB_PSHCM
