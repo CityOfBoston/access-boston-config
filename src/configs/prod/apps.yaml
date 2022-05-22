@@ -67,7 +67,7 @@ categories:
         groups:
           - SG_AB_PSFN
       - title: BAIS HCM
-        url: https://hcm.Boston.gov/psp/pshrpd3/EMPLOYEE/HRMS/h/?tab=DEFAULT
+        url: https://hcm.boston.gov/psp/pshrpd3/EMPLOYEE/HRMS/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-hcm.svg
         groups:
           - SG_AB_PSHCM
@@ -112,7 +112,7 @@ categories:
           - SG_AB_DRUPAL_METROAUTHOR
           - SG_AB_DRUPAL
       - title: Phire
-        url: https://phire.boston.gov/psp/psphpd0/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT
+        url: https://phireprd.bais.boston.gov/psp/phire/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/Phire.svg
         groups:
           - SG_AB_PHIRE
