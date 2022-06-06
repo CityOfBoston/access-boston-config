@@ -196,6 +196,7 @@ categories:
         url: https://eamtst.cityhall.boston.cob:5443/WebMaint/
         agencies:
           - CH
+          - ASSESSING
         groups:
           - SG_AB_BLDGMAINTREQ
       - title: Request FN Access
