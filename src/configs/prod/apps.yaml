@@ -187,6 +187,7 @@ categories:
         url: https://assetessentials.dudesolutions.com/CityOfBoston/MyRequest/Add
         agencies:
           - CH
+          - ASSESSING
         groups:	
           - SG_AB_BLDGMAINTREQ
           - SG_AB_ALLSPONSPONSERED
