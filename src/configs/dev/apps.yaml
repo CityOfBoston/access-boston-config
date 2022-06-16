@@ -168,6 +168,7 @@ categories:
         url: https://identity-dev.boston.gov/identityiq/viewUserIdentityonly.jsf
         groups:
           - SG_AB_SERVICEDESK_USERS
+          - IIQ_ViewIdentity
       - title: Edit Group
         url: "#"
         groups:
