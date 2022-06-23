@@ -222,7 +222,7 @@ categories:
         url: https://identity-test.boston.gov/identityiq/viewUserIdentityonly.jsf
         groups:
           - SG_AB_SERVICEDESK_USERS
-          - IIQ_ViewIdentity
+          - SG_AB_IIQ_ViewIdentity
       - title: Edit Group
         url: "#"
         groups:
