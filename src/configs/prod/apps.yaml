@@ -215,6 +215,7 @@ categories:
         groups:
           - SG_AB_SERVICEDESK_USERS
           - SG_AB_ALLSPONSPONSERED
+          - SG_AB_IIQ_VIEWIDENTITY
       - title: Edit Group
         url: "#"
         groups:
