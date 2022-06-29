@@ -1,7 +1,3 @@
-notice:
-  label: 'Notice'
-  pretext: 'Beacon, the new HR self-service portal, is now live!'
-  text: 'Look for the lighthouse icon below.'
 categories:
   - title: Applications
     show_request_access_link: false
@@ -126,11 +122,6 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
         groups:
           - SG_AB_GOVQA
-      - title: Employee Giving
-        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fwww.philanthropycloud.com
-        icon: https://assets.boston.gov/icons/accessboston/employee_giving_unitedway.svg
-        groups:
-          - SG_AB_UNITEDWAY
       - title: ServiceNow - Lightkeeper
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostontest.service-now.com
         icon: https://assets.boston.gov/icons/accessboston/lantern.svg
