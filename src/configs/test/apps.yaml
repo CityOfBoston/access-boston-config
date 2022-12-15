@@ -12,7 +12,7 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/lighthouse_basic_icon.svg
         groups:
           - SG_AB_ESS
-      - title: BAIS Self-Service
+      - title: Employee Self-Service
         url: https://ess-awsuat.boston.gov
         icon: https://assets.boston.gov/icons/accessboston/ess.svg
         groups:
