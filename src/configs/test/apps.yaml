@@ -12,7 +12,7 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/lighthouse_basic_icon.svg
         groups:
           - SG_AB_ESS
-      - title: BAIS Self-Service
+      - title: Employee Self-Service
         url: https://ess-awsuat.boston.gov
         icon: https://assets.boston.gov/icons/accessboston/ess.svg
         groups:
@@ -48,7 +48,7 @@ categories:
       - title: BPS Job Listings
         url: https://bostonpublicschools.tedk12.com/hire/index.aspx
         icon: https://assets.boston.gov/icons/accessboston/talented.svg
-      - title: Employee Training
+      - title: BAIS Training
         url: https://login.frontlineeducation.com/sso/cityofboston
         icon: https://assets.boston.gov/icons/accessboston/employee-training.svg
         groups:
