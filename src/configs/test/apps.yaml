@@ -107,7 +107,7 @@ categories:
           - SG_AB_DRUPAL_METROAUTHOR
           - SG_AB_DRUPAL
       - title: Phire
-        url: https://testphire.boston.gov/psp/psphpt0/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT
+        url: https://psphtst.bais.boston.gov/psp/psphtst/EMPLOYEE/PSFT_PSPHTST/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/Phire.svg
         groups:
           - SG_AB_PHIRE
