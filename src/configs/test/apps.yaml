@@ -177,10 +177,6 @@ categories:
         url: https://identity-test.boston.gov/identityiq/createSponsor.jsf
         groups:
           - SG_AB_SPONSOR
-      - title: FleetHub
-        url: http://boston.getlocalmotion.com/
-        agencies:
-          - CH
       - title: International Travel
         url: https://goo.gl/forms/Xobh9aZeGXSnKH2m2
         agencies:
