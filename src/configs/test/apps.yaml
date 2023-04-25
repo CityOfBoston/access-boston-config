@@ -7,16 +7,6 @@ categories:
     show_request_access_link: false
     icons: true
     apps:
-      - title: Finesse
-        url: mk-lab-uccxpub.cityhall.boston.cob
-        icon: https://assets.boston.gov/icons/accessboston/finesse.svg
-        groups:
-          - SG_AB_FINESS
-      - title: Jabber
-        url: mk-lab-ccmpub.cityhall.boston.cob
-        icon: https://assets.boston.gov/icons/accessboston/jabber.svg
-        groups:
-          - SG_AB_JABBER
       - title: Beacon
         url: https://cibostontest.service-now.com/cob
         icon: https://assets.boston.gov/icons/accessboston/lighthouse_basic_icon.svg
@@ -180,6 +170,16 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/identity_verification.svg
         groups:
           - SG_AB_CONFIRMID
+      - title: Finesse
+        url: mk-lab-uccxpub.cityhall.boston.cob
+        icon: https://assets.boston.gov/icons/accessboston/finesse.svg
+        groups:
+          - SG_AB_FINESS
+      - title: Jabber
+        url: mk-lab-ccmpub.cityhall.boston.cob
+        icon: https://assets.boston.gov/icons/accessboston/jabber.svg
+        groups:
+          - SG_AB_JABBER
 
   - title: Forms / Links
     apps:
