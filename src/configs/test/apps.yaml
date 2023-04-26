@@ -171,12 +171,12 @@ categories:
         groups:
           - SG_AB_CONFIRMID
       - title: Finesse
-        url: mk-lab-uccxpub.cityhall.boston.cob
+        url: https://mk-uccxpub.cityhall.boston.cob:8445/
         icon: https://assets.boston.gov/icons/accessboston/finesse.svg
         groups:
-          - SG_AB_FINESS
+          - SG_AB_FINESSE
       - title: Jabber
-        url: mk-lab-ccmpub.cityhall.boston.cob
+        url: https://mk-lab-ccmpub.cityhall.boston.cob
         icon: https://assets.boston.gov/icons/accessboston/jabber.svg
         groups:
           - SG_AB_JABBER
