@@ -136,9 +136,6 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/v3.svg
         groups:
           - SG_AB_V3
-      - title: COVID Compliance
-        url: https://cibostontest.service-now.com/covid
-        icon: https://assets.boston.gov/icons/accessboston/health_protection.svg
       - title: Avolve
         url: http://boston-ma-us-test.avolvecloud.net/Portal/
         icon: https://assets.boston.gov/icons/accessboston/avolve.svg
