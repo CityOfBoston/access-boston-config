@@ -1,7 +1,3 @@
-notice:
-  label: 'Notice'
-  pretext: ''
-  text: 'BAIS HCM, BAIS FN, Employee Self-Service (ESS), and the Beacon HR Portal will not be available from May 19 through the morning of May 22, 2023. Please note password reset will not be available during this time.'
 categories:
   - title: Applications
     show_request_access_link: false
