@@ -45,7 +45,7 @@ categories:
         url: https://bostonpublicschools.tedk12.com/hire/index.aspx
         icon: https://assets.boston.gov/icons/accessboston/talented.svg
       - title: BAIS Training
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=http%3A%2F%2Fwww.mylearningplan.com%2Fmvc%2Fsaml%2Fmetadata%2F13583
+        url: https://login.frontlineeducation.com/sso/cityofboston
         icon: https://assets.boston.gov/icons/accessboston/employee-training.svg
         groups:
           - SG_AB_MLP
