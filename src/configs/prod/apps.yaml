@@ -1,3 +1,7 @@
+notice:
+  label: 'Notice'
+  pretext: ''
+  text: ''
 categories:
   - title: Applications
     show_request_access_link: false
@@ -211,9 +215,6 @@ categories:
         url: "#"
         groups:
           - SG_AB_HCMSECURITY
-      - title: Group Management
-        url: /group-management
-        target: _blank
 
   - title: Manager Tools
     apps:
