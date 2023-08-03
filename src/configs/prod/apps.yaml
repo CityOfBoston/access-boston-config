@@ -159,6 +159,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/identity_verification.svg
         groups:
           - SG_AB_CONFIRMID
+      - title: CompAnalyst
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcompanalyst.salary.com%2Fsp
+        icon: https://assets.boston.gov/icons/accessboston/money_bills.svg
+        groups:
+          - SG_AB_COMPANALYST
 
   - title: Forms / Links
     apps:
