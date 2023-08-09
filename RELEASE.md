@@ -27,7 +27,7 @@ The Project Manager will edit the draft release notes, finalize and publish them
 4. click "Set as the latest release",
 5. click the `Publish release` button.
 
-A Github action <img src="https://s3-us-west-2.amazonaws.com/slack-files2/bot_icons/2023-02-09/4779927044435_48.png" alt="" style="width: 20px; height: 20px"/> will now fire which will post a message to the slack [#jira-releases channel](https://cityofboston-doit.slack.com/archives/C03UZ01E5N2).
+A Github action <img src="https://s3-us-west-2.amazonaws.com/slack-files2/bot_icons/2023-02-09/4779927044435_48.png" alt="" style="width: 20px; height: 20px"/> will now fire which will post a message to the CityOfBoston organization Slack channel #digital-services-team-release-notes.
 
 # Release Description Template 
 ```
