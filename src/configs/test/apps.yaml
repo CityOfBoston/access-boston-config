@@ -93,7 +93,7 @@ categories:
         groups:
           - SG_AB_ASSETESSENTIALS
       - title: Edit Boston.gov
-        url: https://d8-stg.boston.gov/saml_login?ReturnTo=https://d8-stg.boston.gov/admin/workbench
+        url: https://d8-stg.boston.gov/saml/login
         icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
         groups:
           - SG_AB_BOSTONDOTGOV
