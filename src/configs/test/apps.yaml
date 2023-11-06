@@ -4,7 +4,7 @@ categories:
     icons: true
     apps:
       - title: Beacon
-        url: https://cibostontest.service-now.com/cob
+        url: https://test-beacon.boston.gov/cob
         icon: https://assets.boston.gov/icons/accessboston/lighthouse_basic_icon.svg
         groups:
           - SG_AB_ESS
@@ -123,7 +123,7 @@ categories:
         groups:
           - SG_AB_GOVQA
       - title: ServiceNow - Lightkeeper
-        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcibostontest.service-now.com
+        url: https://test-beacon.boston.gov/
         icon: https://assets.boston.gov/icons/accessboston/lantern.svg
         groups:
           - SG_AB_SNOWADMIN
