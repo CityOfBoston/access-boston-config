@@ -173,6 +173,9 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/jabber.svg
         groups:
           - SG_AB_JABBER
+      - title: Data Catalog
+        url: https://d3ufr3ed9gbbc9.cloudfront.net/_callback
+        icon: https://assets.boston.gov/icons/accessboston/data_catalog.svg
 
   - title: Forms / Links
     apps:
