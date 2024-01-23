@@ -22,7 +22,7 @@ categories:
         groups:
           - SG_AB_AGILEPOINT
       - title: Data Catalog
-        url: https://d3ufr3ed9gbbc9.cloudfront.net/_callback
+        url: https://d3ufr3ed9gbbc9.cloudfront.net/#!/overview
         icon: https://assets.boston.gov/icons/accessboston/data_catalog.svg
       - title: Security Awareness
         url: https://boston.wombatsecurity.com
