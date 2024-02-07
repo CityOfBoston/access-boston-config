@@ -21,7 +21,7 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/agilepoint.svg
         groups:
           - SG_AB_AGILEPOINT
-      - title: Employee Alerts (working title Employee Alerts)
+      - title: Employee Alerts
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbostonemployeesdev.genasys.com%2Fsaml2%2Fservice-provider-metadata%2Fcobemployee
         icon: https://assets.boston.gov/icons/accessboston/city_workforce_emergency_alerts.svg
       - title: Data Catalog
