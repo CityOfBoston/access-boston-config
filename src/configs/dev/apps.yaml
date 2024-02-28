@@ -72,6 +72,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/civis.svg
         groups:
           - SG_AB_CIVIS
+      - title: Trash and Recycling
+        url: https://www.boston.gov/trash-and-recycling
+        icon: https://www.shutterstock.com/image-vector/trash-line-icon-759308425
+        groups:
+          - SG_AB_CIVIS
       - title: IIQ
         url: https://identity-dev.boston.gov/identityiq/
         icon: https://assets.boston.gov/icons/accessboston/identityiq.svg
