@@ -176,6 +176,21 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/jabber.svg
         groups:
           - SG_AB_JABBER
+      - title: Call Manager
+        url: https://mk-lab-ccmpub.cityhall.boston.cob/
+        icon: https://assets.boston.gov/icons/accessboston/call_manager.svg
+        groups:
+          -  SG_AB_CALLMGR
+      - title: Unity
+        url: https://mk-lab-cucpub.cityhall.boston.cob/cuadmin/home.do
+        icon: https://assets.boston.gov/icons/accessboston/unity.svg
+        groups:
+          - SG_AB_UNITY
+      - title: UCCX
+        url: https://mk-lab-uccxpub.cityhall.boston.cob/
+        icon: https://assets.boston.gov/icons/accessboston/uccx.svg
+        groups:
+          - SG_AB_UCCX
 
   - title: Forms / Links
     apps:
