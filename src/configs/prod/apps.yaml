@@ -21,6 +21,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/agilepoint.svg
         groups:
           - SG_AB_AGILEPOINT
+      - title: Data Catalog
+        url: http://datacatalog.boston.gov
+        icon: https://assets.boston.gov/icons/accessboston/data_catalog2.svg
+        groups:
+          - SG_AB_DBT
       - title: Security Awareness
         url: https://boston.securityeducation.com/
         icon: https://assets.boston.gov/icons/accessboston/proofpoint-web-security.svg
