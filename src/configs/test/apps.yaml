@@ -17,7 +17,7 @@ categories:
         groups:
           - SG_AB_AGILEPOINT
       - title: Employee Alerts
-        url: https://devalertboston.genasys.com/saml2/authenticate/cobemployee-admin
+        url: https://alertbostontraining.genasys.com/
         icon: https://assets.boston.gov/icons/accessboston/city_workforce_emergency_alerts.svg
       - title: Data Catalog
         url: https://d3ufr3ed9gbbc9.cloudfront.net/#!/overview
