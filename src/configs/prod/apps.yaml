@@ -1,7 +1,3 @@
-notice:
-  label: 'Notice'
-  pretext: ''
-  text: 'The Access Boston Portal turns 5 today - Happy Birthday!'
 categories:
   - title: Applications
     show_request_access_link: false
