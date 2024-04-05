@@ -17,8 +17,13 @@ categories:
         groups:
           - SG_AB_AGILEPOINT
       - title: Employee Alerts
-        url: https://alertbostontraining.genasys.com/
+        url: https://devalertboston.genasys.com/saml2/authenticate/cobemployee-admin
         icon: https://assets.boston.gov/icons/accessboston/city_workforce_emergency_alerts.svg
+      - title: Genesys Admin
+        url: https://alertbostontraining.genasys.com/saml2/authenticate/abtraining-admin
+        icon: https://assets.boston.gov/icons/accessboston/emergency_alerts.svg
+        groups:
+          - SG_AB_GENASYSADMINS
       - title: Data Catalog
         url: https://d3ufr3ed9gbbc9.cloudfront.net/#!/overview
         icon: https://assets.boston.gov/icons/accessboston/data_catalog.svg
@@ -167,7 +172,7 @@ categories:
         groups:
           - SG_AB_CONFIRMID
       - title: Finesse
-        url: https://mk-uccxpub.cityhall.boston.cob:8445/
+        url: https://mk-lab-uccxpub.cityhall.boston.cob:8445/desktop
         icon: https://assets.boston.gov/icons/accessboston/finesse.svg
         groups:
           - SG_AB_FINESSE
