@@ -19,9 +19,9 @@ categories:
       - title: Employee Alerts
         url: https://alertbostontraining.genasys.com/saml2/authenticate/abtraining
         icon: https://assets.boston.gov/icons/accessboston/city_workforce_emergency_alerts.svg
-      - title: Genesys Admin
+      - title: Genasys Admin
         url: https://alertbostontraining.genasys.com/saml2/authenticate/abtraining-admin
-        icon: https://assets.boston.gov/icons/accessboston/emergency_alerts.svg
+        icon: https://assets.boston.gov/icons/accessboston/emergency_alerts2.svg
         groups:
           - SG_AB_GENASYSADMINS
       - title: Data Catalog
