@@ -176,6 +176,8 @@ categories:
         url: https://identity.boston.gov/identityiq/createSponsor.jsf
         groups:
           - SG_AB_SPONSOR
+        agencies:
+          - BPDA
       - title: International Travel
         url: https://goo.gl/forms/Xobh9aZeGXSnKH2m2
         groups:
@@ -184,11 +186,13 @@ categories:
           - BPD
           - BFD
           - CH
+          - BPDA
       - title: Building Maintenance
         url: https://assetessentials.dudesolutions.com/CityOfBoston/MyRequest/Add
         agencies:
           - CH
           - ASSESSING
+          - BPDA
         groups:	
           - SG_AB_BLDGMAINTREQ
           - SG_AB_ALLSPONSPONSERED
