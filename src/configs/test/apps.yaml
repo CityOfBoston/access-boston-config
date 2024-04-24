@@ -198,7 +198,7 @@ categories:
           - SG_AB_UCCX
       - title: BPDA Salesforce
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbpda--uat.sandbox.my.salesforce.com
-        icon: https://assets.boston.gov/icons/accessboston/salesforce.svg
+        icon: https://assets.boston.gov/icons/accessboston/salesforce_white.svg
         groups:
           - SG_AB_BPDASALESFORCE
         agencies:
