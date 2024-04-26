@@ -202,7 +202,12 @@ categories:
         groups:
           - SG_AB_BPDASALESFORCE
         agencies:
-          - bpda
+          - BPDA
+      - title: Office365
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fsts.windows.net%2F6bef9dc4-3c83-439f-a8a9-af5d1aaab3f5%2F
+        icon: https://assets.boston.gov/icons/accessboston/O365.svg
+        agencies:
+          - BPDA
 
   - title: Forms / Links
     apps:
