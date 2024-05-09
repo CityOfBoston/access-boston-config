@@ -196,7 +196,7 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/uccx.svg
         groups:
           - SG_AB_UCCX
-      - title: BPDA Salesforce
+      - title: Planning Dept. Salesforce
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbpda--uat.sandbox.my.salesforce.com
         icon: https://assets.boston.gov/icons/accessboston/salesforce_white.svg
         groups:
@@ -213,6 +213,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/ArcGISPortal.svg
         groups:
           - SG_AB_BPDAAGOL
+      - title: Box
+        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=box.net
+        icon: https://assets.boston.gov/icons/accessboston/box.svg
+        groups:
+          - SG_AB_BOX
 
   - title: Forms / Links
     apps:
