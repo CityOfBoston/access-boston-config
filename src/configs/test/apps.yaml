@@ -150,11 +150,6 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/tableau.svg
         groups:
           - SG_AB_TABLEAU
-      - title: CyberArk
-        url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=PasswordVault
-        icon: https://assets.boston.gov/icons/accessboston/cyberark.svg
-        groups:
-          - SG_AB_CYBERARK
       - title: Tanium
         url: https://boston.cloud.tanium.com
         icon: https://assets.boston.gov/icons/experiential_icons/secure.svg
@@ -213,11 +208,15 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/ArcGISPortal.svg
         groups:
           - SG_AB_BPDAAGOL
+        agencies:
+          - BPDA
       - title: Box
         url: https://sso-test.boston.gov/idp/startSSO.ping?PartnerSpId=box.net
         icon: https://assets.boston.gov/icons/accessboston/box.svg
         groups:
           - SG_AB_BOX
+        agencies:
+          - BPDA
 
   - title: Forms / Links
     apps:
