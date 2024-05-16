@@ -227,6 +227,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/bostondotgov-test.svg
         groups:
           - SG_AB_BOSTONDOTGOV_UAT
+      - title: Monsido
+        url: https://login.monsido.com/sso/saml/6fb1f155-932e-40de-b00d-5a9ea9dab652/login
+        icon: https://assets.boston.gov/icons/accessboston/monsido.svg
+        groups:
+          - SG_AB_MONSIDO
 
   - title: Forms / Links
     apps:
