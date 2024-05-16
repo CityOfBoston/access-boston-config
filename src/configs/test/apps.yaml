@@ -217,6 +217,16 @@ categories:
           - SG_AB_BOX
         agencies:
           - BPDA
+      - title: DEV boston.gov
+        url: https://d8-dev.boston.gov/saml/login
+        icon: https://assets.boston.gov/icons/accessboston/bostondotgov-dev.svg
+        groups:
+          - SG_AB_BOSTONDOTGOV_DEV
+      - title: TEST boston.gov
+        url:  https://d8-uat.boston.gov/saml/login 
+        icon: https://assets.boston.gov/icons/accessboston/bostondotgov-test.svg
+        groups:
+          - SG_AB_BOSTONDOTGOV_UAT
 
   - title: Forms / Links
     apps:
