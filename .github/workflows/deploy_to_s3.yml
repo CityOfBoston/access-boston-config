@@ -75,7 +75,6 @@ jobs:
         id: Build-Patterns-And-CDN-Assets
         run: |
           npm install
-          npm run build
 
       - name: Printout vars
         if: ${{ vars.DEPLOY_DEBUG == 1 }}
