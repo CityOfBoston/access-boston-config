@@ -46,9 +46,9 @@ jobs:
             echo "SOURCE_DIR='src/configs/test'" >> "${GITHUB_ENV}"
             echo "S3_DEST_DIR='access-boston-config/test'" >> "${GITHUB_ENV}"
           elif [[ "${{ github.ref_name }}" == "deploy-prod" ]]; then
-            echo "BUCKET_NAME=cob-digital-apps-prod-static" >> "${GITHUB_ENV}"
+            echo "BUCKET_NAME=cob-digital-apps-staging-static" >> "${GITHUB_ENV}"
             echo "SOURCE_DIR='src/configs/prod'" >> "${GITHUB_ENV}"
-            echo "S3_DEST_DIR='access-boston-config'" >> "${GITHUB_ENV}"
+            echo "S3_DEST_DIR='access-boston-config/prod'" >> "${GITHUB_ENV}"
           fi
           if [[ ${{ vars.S3_DRY_RUN }} == 1 ]];then
             echo "S3_DEST_DIR='DRY_RUN/'" >> "${GITHUB_ENV}"
