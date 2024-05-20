@@ -38,17 +38,17 @@ jobs:
       - name: Set Variables
         run: |
           if [[ "${{ github.ref_name }}" == "deploy-dev" ]]; then
-            echo "BUCKET_NAME=cob-digital-apps-staging-config" >> "${GITHUB_ENV}"
+            echo "BUCKET_NAME=cob-digital-apps-staging-static" >> "${GITHUB_ENV}"
             echo "SOURCE_DIR='src/configs/dev'" >> "${GITHUB_ENV}"
-            echo "S3_DEST_DIR='access-boston/dev'" >> "${GITHUB_ENV}"
+            echo "S3_DEST_DIR='access-boston-config/dev'" >> "${GITHUB_ENV}"
           elif [[ "${{ github.ref_name }}" == "deploy-test" ]]; then
-            echo "BUCKET_NAME=cob-digital-apps-staging-config" >> "${GITHUB_ENV}"
+            echo "BUCKET_NAME=cob-digital-apps-staging-static" >> "${GITHUB_ENV}"
             echo "SOURCE_DIR='src/configs/test'" >> "${GITHUB_ENV}"
-            echo "S3_DEST_DIR='access-boston/test'" >> "${GITHUB_ENV}"
+            echo "S3_DEST_DIR='access-boston-config/test'" >> "${GITHUB_ENV}"
           elif [[ "${{ github.ref_name }}" == "deploy-prod" ]]; then
-            echo "BUCKET_NAME=cob-digital-apps-prod-config" >> "${GITHUB_ENV}"
+            echo "BUCKET_NAME=cob-digital-apps-staging-static" >> "${GITHUB_ENV}"
             echo "SOURCE_DIR='src/configs/prod'" >> "${GITHUB_ENV}"
-            echo "S3_DEST_DIR='access-boston'" >> "${GITHUB_ENV}"
+            echo "S3_DEST_DIR='access-boston-config/prod'" >> "${GITHUB_ENV}"
           fi
           if [[ ${{ vars.S3_DRY_RUN }} == 1 ]];then
             echo "S3_DEST_DIR='DRY_RUN/'" >> "${GITHUB_ENV}"
