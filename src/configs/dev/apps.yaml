@@ -1,3 +1,7 @@
+notice:
+  label: 'Notice'
+  pretext: ''
+  text: 'Deploy Test #1'
 categories:
   - title: Applications
     show_request_access_link: false
