@@ -1,0 +1,44 @@
+# @file: prep_3_s3_deploy.yml
+# This actions will (force) push changes to deploy-branches if the corresponding config file changes
+# 
+# Attached resources:
+# - Github SECRETS:
+# 
+# - Github VARIABLES:
+# 
+# 
+name: "(Force) Push Changes to deploy-branches"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  Deploy:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Set Variables
+        run: |
+          echo "TESTING - Set Variable"
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+      - name: Dump job context
+        env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+        run: echo "$JOB_CONTEXT"
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
