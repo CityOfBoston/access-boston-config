@@ -13,9 +13,6 @@ on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 jobs:
   Deploy:
     runs-on: ubuntu-20.04
