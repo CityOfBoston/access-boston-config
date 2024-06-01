@@ -1,0 +1,88 @@
+# @file: prep_3_s3_deploy.yml
+# This actions will (force) push changes to deploy-branches if the corresponding config file changes
+# 
+# Attached resources:
+# - Github SECRETS:
+# 
+# - Github VARIABLES:
+# 
+# 
+name: "(Force) Push Changes to deploy-branches"
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  Deploy:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Set Variables
+        run: |
+          echo "TESTING - Set Variable"
+
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+
+      - name: Dump job context
+        env:
+          JOB_CONTEXT: ${{ toJson(job) }}
+        run: echo "$JOB_CONTEXT"
+     
+      - name: Dump steps context
+        env:
+          STEPS_CONTEXT: ${{ toJson(steps) }}
+        run: echo "$STEPS_CONTEXT"
+      
+      - name: Dump runner context
+        env:
+          RUNNER_CONTEXT: ${{ toJson(runner) }}
+        run: echo "$RUNNER_CONTEXT"
+
+      - name: Get all changed config files
+        id: changed-config-files
+        uses: tj-actions/changed-files@v44
+        with:
+          # Avoid using single or double quotes for multiline patterns
+          files: |
+             **.yaml
+
+      - name: List all changed files config files
+        if: steps.changed-config-files.outputs.any_changed == 'true'
+        env:
+          ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
+        run: |
+          for file in ${ALL_CHANGED_FILES}; do
+            echo "$file was changed"
+          done
+      
+      # - uses: jitterbit/get-changed-files@v1
+      #   id: abc
+      #   with:
+      #     format: space-delimited
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Printing
+      #   run: |
+      #     echo "All:"
+      #     echo "${{ steps.abc.outputs.all }}"
+      #     echo "Added:"
+      #     echo "${{ steps.abc.outputs.added }}"
+      #     echo "Removed:"
+      #     echo "${{ steps.abc.outputs.removed }}"
+      #     echo "Renamed:"
+      #     echo "${{ steps.abc.outputs.renamed }}"
+      #     echo "Modified:"
+      #     echo "${{ steps.abc.outputs.modified }}"
+      #     echo "Added+Modified:"
+      #     echo "${{ steps.abc.outputs.added_modified }}"
