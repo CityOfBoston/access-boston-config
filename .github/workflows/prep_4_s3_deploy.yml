@@ -87,13 +87,13 @@ jobs:
             GITHUB_ENV: ${{ toJson(env) }}
         # run: echo "$GITHUB_ENV.SRC_TEST"
         run: |
-          if [[ ${env.SRC_TEST} == 1 ]]
+          if [[ ${{ env.SRC_TEST }} == 1 ]]
             then
               echo "SRC_TEST 1"
-              echo "${env.SRC_TEST}"
+              echo "${{ env.SRC_TEST }}"
             else
               echo "SRC_TEST 0"
-              echo "${env.SRC_TEST}"
+              echo "${{ env.SRC_TEST }}"
           fi
 
       # - name: Dump GitHub Env
