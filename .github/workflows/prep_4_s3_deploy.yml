@@ -74,9 +74,11 @@ jobs:
               echo "Match Found ... $file"
             else
               echo "No Match for $file"
-            if
+            fi
           done
+
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
+          
           for i in "${array[@]}"
           do
             if [[ $i == src/configs/dev/apps.yaml ]]
