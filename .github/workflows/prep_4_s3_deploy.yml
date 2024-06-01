@@ -66,7 +66,7 @@ jobs:
         if: steps.changed-config-files.outputs.any_changed == 'true'
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+          ACTOR: ${{ toJson(github).actor }}
         run: |
           echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
           TARGET=deploy-none
@@ -95,7 +95,7 @@ jobs:
 
             echo "TARGET_BRANCH Below:"
             echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
-            echo "Actor: $GITHUB_CONTEXT.actor"
+            echo "Actor: $ACTOR"
           done
 
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
