@@ -1,5 +1,5 @@
 notice:
-  label: 'Notice'
+  label: 'Notice 2'
   pretext: ''
   text: 'Deploy Test #1'
 categories:
@@ -195,4 +195,3 @@ categories:
         url: https://identity-dev.boston.gov/identityiq/extendSponsor.jsf
         groups:
           - SG_AB_SPONSOR
-
