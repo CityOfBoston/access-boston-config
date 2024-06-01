@@ -85,7 +85,7 @@ jobs:
       - name: Check if deploy is needed
         env:
             GITHUB_ENV: ${{ toJson(env) }}
-        run: echo "$GITHUB_ENV"
+        run: echo "$GITHUB_ENV.SRC_TEST"
 
       # - name: Dump GitHub Env
       #   env:
