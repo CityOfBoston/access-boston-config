@@ -1,21 +1,15 @@
 # @file: prep_3_s3_deploy.yml
 # This actions will (force) push changes to deploy-branches if the corresponding config file changes
 # 
-# Attached resources:
-# - Github SECRETS:
-# 
-# - Github VARIABLES:
-# 
-# 
 name: "(Force) Push Changes to deploy-branches"
 on:
   workflow_dispatch:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
+  # pull_request:
+  #   branches:
+  #     - master
 jobs:
   Deploy:
     runs-on: ubuntu-20.04
@@ -26,30 +20,6 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
 
-      - name: Set Variables
-        run: |
-          echo "TESTING - Set Variable"
-
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-
-      - name: Dump job context
-        env:
-          JOB_CONTEXT: ${{ toJson(job) }}
-        run: echo "$JOB_CONTEXT"
-     
-      - name: Dump steps context
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEPS_CONTEXT"
-      
-      - name: Dump runner context
-        env:
-          RUNNER_CONTEXT: ${{ toJson(runner) }}
-        run: echo "$RUNNER_CONTEXT"
-
       - name: Get all changed config files
         id: changed-config-files
         uses: tj-actions/changed-files@v44
@@ -58,31 +28,42 @@ jobs:
           files: |
              **.yaml
 
-      - name: List all changed files config files
+      - name: (Force) Push to Deploy Branches
         if: steps.changed-config-files.outputs.any_changed == 'true'
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
+          ACTOR: ${{ github.actor }}
+          EMAIL: "${{ github.actor }}@users.noreply.github.com"
         run: |
-          for file in ${ALL_CHANGED_FILES}; do
-            echo "$file was changed"
-          done
-      
-      # - uses: jitterbit/get-changed-files@v1
-      #   id: abc
-      #   with:
-      #     format: space-delimited
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Printing
-      #   run: |
-      #     echo "All:"
-      #     echo "${{ steps.abc.outputs.all }}"
-      #     echo "Added:"
-      #     echo "${{ steps.abc.outputs.added }}"
-      #     echo "Removed:"
-      #     echo "${{ steps.abc.outputs.removed }}"
-      #     echo "Renamed:"
-      #     echo "${{ steps.abc.outputs.renamed }}"
-      #     echo "Modified:"
-      #     echo "${{ steps.abc.outputs.modified }}"
-      #     echo "Added+Modified:"
-      #     echo "${{ steps.abc.outputs.added_modified }}"
+          if [[ ${#ALL_CHANGED_FILES[@]} -gt 0 ]]
+          then
+            for file in ${ALL_CHANGED_FILES}; do
+              echo "$file was changed"
+
+              if [[ $file == src/configs/test/apps.yaml ]]
+              then
+                TARGET=deploy-test
+              fi
+              
+              if [[ $file == src/configs/dev/apps.yaml ]]
+              then
+                TARGET=deploy-dev
+              fi
+              
+              if [[ $file == src/configs/prod/apps.yaml ]]
+              then
+                TARGET=deploy-prod
+              fi
+
+              echo "TARGET_BRANCH Below:"
+              echo "$TARGET | ${TARGET}"
+              echo "Actor: $ACTOR"
+              echo "EMAIL: $EMAIL"
+              
+              git config --global user.name "$ACTOR"
+              git config --global user.email "$EMAIL"
+              echo "git config user.name: [$(git config user.name)]"
+              echo "git config user.email: [$(git config user.email)]"
+              git push --uf origin ${TARGET}
+            done
+          fi
