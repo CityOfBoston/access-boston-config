@@ -32,7 +32,7 @@ jobs:
           echo "SRC_DEV=0" >> "${GITHUB_ENV}"
           echo "SRC_TEST=0" >> "${GITHUB_ENV}"
           echo "SRC_PROD=0" >> "${GITHUB_ENV}"
-          echo "SRC_TEST = [${GITHUB_ENV.SRC_TEST}]"
+          echo "SRC_TEST ${GITHUB_ENV.SRC_TEST}"
 
       # - name: Dump GitHub context
       #   env:
