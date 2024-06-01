@@ -69,34 +69,37 @@ jobs:
           ACTOR: ${{ github.actor }}
         run: |
           echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
-          TARGET=deploy-none
           
-          for file in ${ALL_CHANGED_FILES}; do
-            echo "$file was changed"
+          if [[ ALL_CHANGED_FILES.len -gt 0 ]]
+          then
+            for file in ${ALL_CHANGED_FILES}; do
+              echo "$file was changed"
 
-            if [[ $file == src/configs/test/apps.yaml ]]
-            then
-              echo "SRC_TEST=1" >> "${GITHUB_ENV}"
-              echo "TARGET_BRANCH='deploy-test'" >> "${GITHUB_ENV}"
-              TARGET=deploy-test
-            fi
-            
-            if [[ $file == src/configs/dev/apps.yaml ]]
-            then
-              echo "TARGET_BRANCH='deploy-dev'" >> "${GITHUB_ENV}"
-              TARGET=deploy-dev
-            fi
-            
-            if [[ $file == src/configs/prod/apps.yaml ]]
-            then
-              echo "TARGET_BRANCH='deploy-prod'" >> "${GITHUB_ENV}"
-              TARGET=deploy-prod
-            fi
+              if [[ $file == src/configs/test/apps.yaml ]]
+              then
+                # echo "SRC_TEST=1" >> "${GITHUB_ENV}"
+                # echo "TARGET_BRANCH='deploy-test'" >> "${GITHUB_ENV}"
+                TARGET=deploy-test
+              fi
+              
+              if [[ $file == src/configs/dev/apps.yaml ]]
+              then
+                echo "TARGET_BRANCH='deploy-dev'" >> "${GITHUB_ENV}"
+                TARGET=deploy-dev
+              fi
+              
+              if [[ $file == src/configs/prod/apps.yaml ]]
+              then
+                echo "TARGET_BRANCH='deploy-prod'" >> "${GITHUB_ENV}"
+                TARGET=deploy-prod
+              fi
 
-            echo "TARGET_BRANCH Below:"
-            echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
+              echo "TARGET_BRANCH Below:"
+              echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
+            done
+
             echo "Actor: $ACTOR"
-          done
+          fi
 
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
       
