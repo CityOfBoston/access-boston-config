@@ -83,7 +83,9 @@ jobs:
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
       
       - name: Check if deploy is needed
-        run: echo "$env.SRC_TEST"
+        env:
+            GITHUB_ENV: ${{ toJson(env) }}
+        run: echo "$GITHUB_ENV"
 
       # - name: Dump GitHub Env
       #   env:
