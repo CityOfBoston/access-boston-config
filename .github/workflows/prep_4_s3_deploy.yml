@@ -64,6 +64,7 @@ jobs:
               git config --global user.email "$EMAIL"
               echo "git config user.name: [$(git config user.name)]"
               echo "git config user.email: [$(git config user.email)]"
-              git push -uf origin ${TARGET}
+              git checkout -b ${TARGET}
+              git push -uf --no-verify origin ${TARGET}
             done
           fi
