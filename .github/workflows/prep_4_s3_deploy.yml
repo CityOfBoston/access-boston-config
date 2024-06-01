@@ -26,34 +26,6 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
 
-      - name: Set Variables
-        run: |
-          echo "TESTING - Set Variable"
-          echo "SRC_DEV=0" >> "${GITHUB_ENV}"
-          echo "SRC_TEST=0" >> "${GITHUB_ENV}"
-          echo "SRC_PROD=0" >> "${GITHUB_ENV}"
-          echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
-
-      # - name: Dump GitHub context
-      #   env:
-      #     GITHUB_CONTEXT: ${{ toJson(github) }}
-      #   run: echo "$GITHUB_CONTEXT"
-
-      # - name: Dump job context
-      #   env:
-      #     JOB_CONTEXT: ${{ toJson(job) }}
-      #   run: echo "$JOB_CONTEXT"
-     
-      # - name: Dump steps context
-      #   env:
-      #     STEPS_CONTEXT: ${{ toJson(steps) }}
-      #   run: echo "$STEPS_CONTEXT"
-      
-      # - name: Dump runner context
-      #   env:
-      #     RUNNER_CONTEXT: ${{ toJson(runner) }}
-      #   run: echo "$RUNNER_CONTEXT"
-
       - name: Get all changed config files
         id: changed-config-files
         uses: tj-actions/changed-files@v44
@@ -62,15 +34,13 @@ jobs:
           files: |
              **.yaml
 
-      - name: List all changed files config files
+      - name: (Force) Push to Deploy Branches
         if: steps.changed-config-files.outputs.any_changed == 'true'
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
           ACTOR: ${{ github.actor }}
           EMAIL: "${{ github.actor }}@users.noreply.github.com"
         run: |
-          echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
-          
           if [[ ${#ALL_CHANGED_FILES[@]} -gt 0 ]]
           then
             for file in ${ALL_CHANGED_FILES}; do
@@ -78,27 +48,21 @@ jobs:
 
               if [[ $file == src/configs/test/apps.yaml ]]
               then
-                # echo "SRC_TEST=1" >> "${GITHUB_ENV}"
-                # echo "TARGET_BRANCH='deploy-test'" >> "${GITHUB_ENV}"
                 TARGET=deploy-test
               fi
               
               if [[ $file == src/configs/dev/apps.yaml ]]
               then
-                echo "TARGET_BRANCH='deploy-dev'" >> "${GITHUB_ENV}"
                 TARGET=deploy-dev
               fi
               
               if [[ $file == src/configs/prod/apps.yaml ]]
               then
-                echo "TARGET_BRANCH='deploy-prod'" >> "${GITHUB_ENV}"
                 TARGET=deploy-prod
               fi
 
               echo "TARGET_BRANCH Below:"
               echo "$TARGET | ${TARGET}"
-              # echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
-
               echo "Actor: $ACTOR"
               echo "EMAIL: $EMAIL"
               
@@ -108,67 +72,4 @@ jobs:
               echo "git config user.email: [$(git config user.email)]"
               # git push --uf origin ${TARGET}
             done
-
-            echo "Actor: $ACTOR"
           fi
-
-          echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
-      
-      # - name: Check if deploy is needed
-      #   env:
-      #       GITHUB_ENV: ${{ toJson(env) }}
-      #   # run: echo "$GITHUB_ENV.SRC_TEST"
-      #   run: |
-      #     if [[ ${{ env.SRC_TEST }} == 1 ]]
-      #       then
-      #         echo "SRC_TEST 1"
-      #         echo "${{ env.SRC_TEST }}"
-      #       else
-      #         echo "SRC_TEST 0"
-      #         echo "${{ env.SRC_TEST }}"
-      #     fi
-
-      # - name: Dump GitHub Env
-      #   env:
-      #     GITHUB_ENV: ${{ toJson(env) }}
-      #   run: echo "$GITHUB_ENV
-      
-      # - name: Dump GitHub context
-      #   env:
-      #     GITHUB_CONTEXT: ${{ toJson(github) }}
-      #   run: echo "$GITHUB_CONTEXT"
-
-      # - name: Dump job context
-      #   env:
-      #     JOB_CONTEXT: ${{ toJson(job) }}
-      #   run: echo "$JOB_CONTEXT"
-     
-      # - name: Dump steps context
-      #   env:
-      #     STEPS_CONTEXT: ${{ toJson(steps) }}
-      #   run: echo "$STEPS_CONTEXT"
-      
-      # - name: Dump runner context
-      #   env:
-      #     RUNNER_CONTEXT: ${{ toJson(runner) }}
-      #   run: echo "$RUNNER_CONTEXT"
-
-      # - uses: jitterbit/get-changed-files@v1
-      #   id: abc
-      #   with:
-      #     format: space-delimited
-      #     token: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Printing
-      #   run: |
-      #     echo "All:"
-      #     echo "${{ steps.abc.outputs.all }}"
-      #     echo "Added:"
-      #     echo "${{ steps.abc.outputs.added }}"
-      #     echo "Removed:"
-      #     echo "${{ steps.abc.outputs.removed }}"
-      #     echo "Renamed:"
-      #     echo "${{ steps.abc.outputs.renamed }}"
-      #     echo "Modified:"
-      #     echo "${{ steps.abc.outputs.modified }}"
-      #     echo "Added+Modified:"
-      #     echo "${{ steps.abc.outputs.added_modified }}"
