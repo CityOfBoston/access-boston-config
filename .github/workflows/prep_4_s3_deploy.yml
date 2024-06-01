@@ -66,6 +66,7 @@ jobs:
         if: steps.changed-config-files.outputs.any_changed == 'true'
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
+          GITHUB_CONTEXT: ${{ toJson(github) }}
         run: |
           echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
           TARGET=deploy-none
@@ -75,9 +76,7 @@ jobs:
 
             if [[ $file == src/configs/test/apps.yaml ]]
             then
-              echo "Match Found ... $file"
               echo "SRC_TEST=1" >> "${GITHUB_ENV}"
-              echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
               echo "TARGET_BRANCH='deploy-test'" >> "${GITHUB_ENV}"
               TARGET=deploy-test
             fi
@@ -96,23 +95,24 @@ jobs:
 
             echo "TARGET_BRANCH Below:"
             echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
+            echo "Actor: $GITHUB_CONTEXT.actor"
           done
 
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
       
-      - name: Check if deploy is needed
-        env:
-            GITHUB_ENV: ${{ toJson(env) }}
-        # run: echo "$GITHUB_ENV.SRC_TEST"
-        run: |
-          if [[ ${{ env.SRC_TEST }} == 1 ]]
-            then
-              echo "SRC_TEST 1"
-              echo "${{ env.SRC_TEST }}"
-            else
-              echo "SRC_TEST 0"
-              echo "${{ env.SRC_TEST }}"
-          fi
+      # - name: Check if deploy is needed
+      #   env:
+      #       GITHUB_ENV: ${{ toJson(env) }}
+      #   # run: echo "$GITHUB_ENV.SRC_TEST"
+      #   run: |
+      #     if [[ ${{ env.SRC_TEST }} == 1 ]]
+      #       then
+      #         echo "SRC_TEST 1"
+      #         echo "${{ env.SRC_TEST }}"
+      #       else
+      #         echo "SRC_TEST 0"
+      #         echo "${{ env.SRC_TEST }}"
+      #     fi
 
       # - name: Dump GitHub Env
       #   env:
