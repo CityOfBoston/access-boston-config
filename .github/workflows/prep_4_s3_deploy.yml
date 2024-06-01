@@ -67,6 +67,9 @@ jobs:
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
         run: |
+          echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
+          echo "'deploy-non'" >> "${TARGET}"
+          
           for file in ${ALL_CHANGED_FILES}; do
             echo "$file was changed"
 
@@ -89,7 +92,7 @@ jobs:
             fi
 
             echo "TARGET_BRANCH Below:"
-            echo "${{ env.TARGET_BRANCH }}"
+            echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
           done
 
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
