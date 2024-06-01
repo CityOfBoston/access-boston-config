@@ -29,26 +29,30 @@ jobs:
       - name: Set Variables
         run: |
           echo "TESTING - Set Variable"
+          echo "SRC_DEV=0" >> "${GITHUB_ENV}"
+          echo "SRC_TEST=0" >> "${GITHUB_ENV}"
+          echo "SRC_PROD=0" >> "${GITHUB_ENV}"
+          echo "SRC_TEST = [${GITHUB_ENV.SRC_TEST}]"
 
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
+      # - name: Dump GitHub context
+      #   env:
+      #     GITHUB_CONTEXT: ${{ toJson(github) }}
+      #   run: echo "$GITHUB_CONTEXT"
 
-      - name: Dump job context
-        env:
-          JOB_CONTEXT: ${{ toJson(job) }}
-        run: echo "$JOB_CONTEXT"
+      # - name: Dump job context
+      #   env:
+      #     JOB_CONTEXT: ${{ toJson(job) }}
+      #   run: echo "$JOB_CONTEXT"
      
-      - name: Dump steps context
-        env:
-          STEPS_CONTEXT: ${{ toJson(steps) }}
-        run: echo "$STEPS_CONTEXT"
+      # - name: Dump steps context
+      #   env:
+      #     STEPS_CONTEXT: ${{ toJson(steps) }}
+      #   run: echo "$STEPS_CONTEXT"
       
-      - name: Dump runner context
-        env:
-          RUNNER_CONTEXT: ${{ toJson(runner) }}
-        run: echo "$RUNNER_CONTEXT"
+      # - name: Dump runner context
+      #   env:
+      #     RUNNER_CONTEXT: ${{ toJson(runner) }}
+      #   run: echo "$RUNNER_CONTEXT"
 
       - name: Get all changed config files
         id: changed-config-files
@@ -66,7 +70,30 @@ jobs:
           for file in ${ALL_CHANGED_FILES}; do
             echo "$file was changed"
           done
-          echo "${#ALL_CHANGED_FILES[@]}"
+          echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
+          for i in "${array[@]}"
+          do
+            if [[ $i == "src/configs/test/apps.yaml" ]]
+            then
+              echo "SRC_DEV=1" >> "${GITHUB_ENV}"
+              echo "SRC_DEV = [${GITHUB_ENV.SRC_DEV}]"
+              echo "value found" && exit 0
+            fi
+            
+            if [[ $i == "src/configs/test/apps.yaml" ]]
+            then
+              echo "SRC_TEST=1" >> "${GITHUB_ENV}"
+              echo "SRC_TEST = [${GITHUB_ENV.SRC_TEST}]"
+              echo "value found" && exit 0
+            fi
+
+            if [[ $i == "src/configs/prod/apps.yaml" ]]
+            then
+              echo "SRC_PROD=1" >> "${GITHUB_ENV}"
+              echo "SRC_PROD = [${GITHUB_ENV.SRC_PROD}]"
+              echo "value found" && exit 0
+            fi
+          done
       
       # - uses: jitterbit/get-changed-files@v1
       #   id: abc
