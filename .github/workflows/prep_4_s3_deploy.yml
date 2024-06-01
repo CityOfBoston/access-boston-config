@@ -32,7 +32,7 @@ jobs:
           echo "SRC_DEV=0" >> "${GITHUB_ENV}"
           echo "SRC_TEST=0" >> "${GITHUB_ENV}"
           echo "SRC_PROD=0" >> "${GITHUB_ENV}"
-          # echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
+          echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
 
       # - name: Dump GitHub context
       #   env:
@@ -73,21 +73,21 @@ jobs:
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
           for i in "${array[@]}"
           do
-            if [[ $i == "src/configs/test/apps.yaml" ]]
+            if [[ $i == src/configs/dev/apps.yaml ]]
             then
               echo "SRC_DEV=1" >> "${GITHUB_ENV}"
               echo "SRC_DEV = [${GITHUB_ENV.SRC_DEV}]"
               echo "value found" && exit 0
             fi
             
-            if [[ $i == "src/configs/test/apps.yaml" ]]
+            if [[ $i == src/configs/test/apps.yaml ]]
             then
               echo "SRC_TEST=1" >> "${GITHUB_ENV}"
               echo "SRC_TEST = [${GITHUB_ENV.SRC_TEST}]"
               echo "value found" && exit 0
             fi
 
-            if [[ $i == "src/configs/prod/apps.yaml" ]]
+            if [[ $i == src/configs/prod/apps.yaml ]]
             then
               echo "SRC_PROD=1" >> "${GITHUB_ENV}"
               echo "SRC_PROD = [${GITHUB_ENV.SRC_PROD}]"
