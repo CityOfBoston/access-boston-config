@@ -73,7 +73,7 @@ jobs:
             then
               echo "Match Found ... $file"
               echo "SRC_TEST=1" >> "${GITHUB_ENV}"
-              echo "SRC_TEST = [${GITHUB_ENV.SRC_TEST}]"
+              echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
             else
               echo "No Match for $file"
             fi
