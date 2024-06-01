@@ -92,6 +92,7 @@ jobs:
               echo "SRC_TEST 1"
             else
               echo "SRC_TEST 0"
+              echo "$env.SRC_TEST"
           fi
 
       # - name: Dump GitHub Env
