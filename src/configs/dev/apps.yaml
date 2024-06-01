@@ -1,7 +1,7 @@
 notice:
   label: 'Notice'
   pretext: ''
-  text: 'Deploy Dev #1'
+  text: 'Testing ...'
 categories:
   - title: Applications
     show_request_access_link: false
