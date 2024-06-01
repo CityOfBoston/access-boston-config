@@ -67,6 +67,7 @@ jobs:
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-config-files.outputs.all_changed_files }}
           ACTOR: ${{ github.actor }}
+          EMAIL: "${{ github.actor }}@users.noreply.github.com"
         run: |
           echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
           
@@ -95,7 +96,16 @@ jobs:
               fi
 
               echo "TARGET_BRANCH Below:"
-              echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
+              echo "$TARGET | ${TARGET}"
+              # echo "${{ env.TARGET_BRANCH }} | $TARGET | ${TARGET}"
+
+              echo "Actor: $ACTOR"
+              echo "EMAIL: $EMAIL"
+              echo "git config user.name: ${git config user.name}"
+
+              # git config --global user.name "$ACTOR"
+              # git config --global user.email "$EMAIL"
+              # git push --uf origin ${TARGET}
             done
 
             echo "Actor: $ACTOR"
