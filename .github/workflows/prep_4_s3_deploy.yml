@@ -101,10 +101,11 @@ jobs:
 
               echo "Actor: $ACTOR"
               echo "EMAIL: $EMAIL"
-              echo "git config user.name: $(git config user.name)"
-
-              # git config --global user.name "$ACTOR"
-              # git config --global user.email "$EMAIL"
+              
+              git config --global user.name "$ACTOR"
+              git config --global user.email "$EMAIL"
+              echo "git config user.name: [$(git config user.name)]"
+              echo "git config user.email: [$(git config user.email)]"
               # git push --uf origin ${TARGET}
             done
 
