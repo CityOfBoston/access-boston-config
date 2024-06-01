@@ -70,7 +70,7 @@ jobs:
         run: |
           echo "TARGET_BRANCH='deploy-none'" >> "${GITHUB_ENV}"
           
-          if [[ ALL_CHANGED_FILES.len -gt 0 ]]
+          if [[ ${#ALL_CHANGED_FILES[@]} -gt 0 ]]
           then
             for file in ${ALL_CHANGED_FILES}; do
               echo "$file was changed"
