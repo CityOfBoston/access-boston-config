@@ -74,6 +74,7 @@ jobs:
               echo "Match Found ... $file"
               echo "SRC_TEST=1" >> "${GITHUB_ENV}"
               echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
+              
             else
               echo "No Match for $file"
             fi
@@ -81,6 +82,31 @@ jobs:
 
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
       
+      - name: Dump GitHub Env
+        env:
+          GITHUB_ENV: ${{ toJson(env) }}
+        run: echo "$GITHUB_ENV
+      
+      # - name: Dump GitHub context
+      #   env:
+      #     GITHUB_CONTEXT: ${{ toJson(github) }}
+      #   run: echo "$GITHUB_CONTEXT"
+
+      # - name: Dump job context
+      #   env:
+      #     JOB_CONTEXT: ${{ toJson(job) }}
+      #   run: echo "$JOB_CONTEXT"
+     
+      # - name: Dump steps context
+      #   env:
+      #     STEPS_CONTEXT: ${{ toJson(steps) }}
+      #   run: echo "$STEPS_CONTEXT"
+      
+      # - name: Dump runner context
+      #   env:
+      #     RUNNER_CONTEXT: ${{ toJson(runner) }}
+      #   run: echo "$RUNNER_CONTEXT"
+
       # - uses: jitterbit/get-changed-files@v1
       #   id: abc
       #   with:
