@@ -82,10 +82,13 @@ jobs:
 
           echo "ALL_CHANGED_FILES.len = ${#ALL_CHANGED_FILES[@]}"
       
-      - name: Dump GitHub Env
-        env:
-          GITHUB_ENV: ${{ toJson(env) }}
-        run: echo "$GITHUB_ENV
+      - name: Check if deploy is needed
+        run: echo "SRC_TEST = $env.SRC_TEST"
+
+      # - name: Dump GitHub Env
+      #   env:
+      #     GITHUB_ENV: ${{ toJson(env) }}
+      #   run: echo "$GITHUB_ENV
       
       # - name: Dump GitHub context
       #   env:
