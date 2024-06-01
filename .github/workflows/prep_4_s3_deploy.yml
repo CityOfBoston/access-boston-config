@@ -79,16 +79,19 @@ jobs:
               echo "SRC_TEST=1" >> "${GITHUB_ENV}"
               echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
               echo "TARGET_BRANCH='deploy-test'" >> "${GITHUB_ENV}"
+              TARGET=deploy-test
             fi
             
             if [[ $file == src/configs/dev/apps.yaml ]]
             then
               echo "TARGET_BRANCH='deploy-dev'" >> "${GITHUB_ENV}"
+              TARGET=deploy-dev
             fi
             
             if [[ $file == src/configs/prod/apps.yaml ]]
             then
               echo "TARGET_BRANCH='deploy-prod'" >> "${GITHUB_ENV}"
+              TARGET=deploy-prod
             fi
 
             echo "TARGET_BRANCH Below:"
