@@ -87,7 +87,7 @@ jobs:
             GITHUB_ENV: ${{ toJson(env) }}
         # run: echo "$GITHUB_ENV.SRC_TEST"
         run: |
-          if [[ $env.SRC_TEST == "1" ]]
+          if [[ $env.SRC_TEST == 1 ]]
             then
               echo "SRC_TEST 1"
             else
