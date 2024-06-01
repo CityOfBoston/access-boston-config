@@ -83,7 +83,8 @@ jobs:
               echo "TARGET_BRANCH='deploy-dev'" >> "${GITHUB_ENV}"
             fi
             
-            if [[ $file == src/configs/prod/apps.yaml ]]then
+            if [[ $file == src/configs/prod/apps.yaml ]]
+            then
               echo "TARGET_BRANCH='deploy-prod'" >> "${GITHUB_ENV}"
             fi
 
