@@ -70,18 +70,20 @@ jobs:
           for file in ${ALL_CHANGED_FILES}; do
             echo "$file was changed"
 
-            if [[ $file == src/configs/test/apps.yaml ]] then
+            if [[ $file == src/configs/test/apps.yaml ]]
+            then
               echo "Match Found ... $file"
               echo "SRC_TEST=1" >> "${GITHUB_ENV}"
               echo "SRC_TEST = $GITHUB_ENV.SRC_TEST"
               echo "TARGET_BRANCH='deploy-test'" >> "${GITHUB_ENV}"
             fi
             
-            if [[ $file == src/configs/dev/apps.yaml ]] then
+            if [[ $file == src/configs/dev/apps.yaml ]]
+            then
               echo "TARGET_BRANCH='deploy-dev'" >> "${GITHUB_ENV}"
             fi
             
-            if [[ $file == src/configs/prod/apps.yaml ]] then
+            if [[ $file == src/configs/prod/apps.yaml ]]then
               echo "TARGET_BRANCH='deploy-prod'" >> "${GITHUB_ENV}"
             fi
 
