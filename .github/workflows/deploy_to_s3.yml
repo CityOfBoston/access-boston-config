@@ -12,7 +12,7 @@
 #     -> local: S3_DRY_RUN -> Copies a single file into the s3 bucket DRY_RUN folder (for testing)
 #     -> local: DEPLOY_DEBUG -> Debug mode, generally prints more output for debugging
 #     -> local: RUN_JEST -> Launch Jest tests as part of action
-name: "Deploy Patterns to Amazon S3 - PBK"
+name: "Deploy AB Configs to Amazon S3"
 on:
   workflow_dispatch:
   push:
