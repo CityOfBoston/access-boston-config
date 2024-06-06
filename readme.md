@@ -13,6 +13,13 @@
 [commits_page_pass]: ./src/images/commits_page_pass.png "Commit Page > Build Passed"
 [commits_page_fail]: ./src/images/commits_page_fail.png "Commit Page > Build Failed"
 [groups_syntax]: ./src/images/groups_syntax.png "Groups Syntax"
+[commit1]: ./src/images/git-actions/commit1.jpg "Commit Modal"
+[commit2]: ./src/images/git-actions/commit2.jpg "Commit Dropdown"
+[deploy1]: ./src/images/git-actions/deploy1.png "Deploy 1"
+[deploy2]: ./src/images/git-actions/deploy2.png "Deploy 2"
+[deploy3]: ./src/images/git-actions/deploy3.png "Deploy 3"
+[deploy4]: ./src/images/git-actions/deploy4.jpg "Deploy 4"
+[deploy5]: ./src/images/git-actions/deploy5.jpg "Deploy 5"
 
 This repository exists to manage changes to the "front end" side of the Access Boston website without the need of a developer. The changes that can be made are for: application icons, application names, application links, and application access/assigned security group. The changes will be made by editing the "config files" for each of the website environments (i.e. development, test, production). The changes need to be made on each environment separately. The following are step-by-step instructions on how to make these edits. 
 
@@ -39,19 +46,21 @@ It is encouraged to make these changes Monday-Firday, 9 a.m.-5 p.m., if possible
    *Groups is a list of groups of people with access that application. The formatting should follow this style:
 
      ![groups_syntax][groups_syntax]
-3. When you're done making changes, go to the bottom of the page where it says 'Commit Changes' and provide a name and description for the changes made.
-   ![Commit Fields][commit]
-4. Leave the "Commit directly to the 'master' branch" radio button checked
+3. When you're done making changes, click on the  'Commit Changes' button on the top right corner. This will open a pop-up modal; provide a name and description for the changes made.
+   ![commit2][commit2]
+4. In pop-up modal select the "Create a new Branch for this commit" radio button
 5. When you're done, hit the "Commit Changes" button
-   ![Commit Button][commit_btn]
-6. No you can go back to either the [homepage](https://github.com/CityOfBoston/access-boston-config) or [commits page](https://github.com/CityOfBoston/access-boston-config/commits/master) to view this commit's progress.
-
-Homepage ![homepage_commit][homepage_commit]
-Commits page ![commits_page][commits_page]
-
-If you see a yellow dot next to the commit, its still being processed, once its done the dot will check to a green check mark if it passed or a red x if it failed
-
-Passed ![homepage_commit][commits_page_pass]
-Failed ![commits_page][commits_page_fail]
-
-Once the build for the commit passes, our build integration with Travis notifies Digital Team will be notified via Slack that we can restart the application on AWS.
+   ![commit1][commit1]
+6. Give the new branch for your work a name.
+7. Hit the "Propose Changes" button; this will take you to another screen where you will see a preview of the "Pull Request" that will be created.
+8. Hit the "Create Pull Request" button. This will create the PR and you will be take to its page.
+9. On the PR page tag a reviewer to approve your changes. After you'll be able to "Merge" your changes. After mergin a github action for `(Force) Push Changes to deploy-branches`. ![deploy1][deploy1] This will update the corresponding [deploy-`dev|test|prod`] branch to match the `master` branch.
+10. Go to the `Deploy AB Configs to Amazon S3` Github Actions, click on the `Run workflow` to select what branch to run this action on
+   ![deploy2][deploy2]
+   ![deploy4][deploy4]
+   ![deploy3][deploy3]
+   ![deploy5][deploy5]
+11. Select the branch your previous commit targeted and clic `Run workflow`
+12. Wait for the `workflow` to run, it will show a `green` circular check mark if the it passed, and a `red` circular `x` if it failed
+13. Go to the `AWS Console` and update the `ECS` instance you want to update with this config change. This will create a new instance of the service and spin down the previous ones once its stable
+14. DONE
