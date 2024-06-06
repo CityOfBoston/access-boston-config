@@ -181,7 +181,7 @@ categories:
           - SG_AB_BOSTONDOTGOV_UAT
           - SG_AB_DRUPAL_UAT
       - title: Password Manager
-        url: https://abe4357.id.cyberark.cloud/my#/MyApps/VHJlZVRhYjphbGw=
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=CN%3DCyberArk%3ACustomer%3AABE4357
         icon: https://assets.boston.gov/icons/accessboston/password-manager.svg
         groups:
           - SG_AB_WPM
