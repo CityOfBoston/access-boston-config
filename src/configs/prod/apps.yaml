@@ -1,7 +1,3 @@
-notice:
-  label: 'Notice'
-  pretext: ''
-  text: 'On Friday, May 31, The Hub website will be retired and will no longer be available. All of the content has been moved to remain accessible and is currently in Beacon.'
 categories:
   - title: Applications
     show_request_access_link: false
