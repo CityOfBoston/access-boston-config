@@ -52,11 +52,6 @@ categories:
       - title: Boston Maps
         url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=boston.maps.arcgis.com
         icon: https://assets.boston.gov/icons/accessboston/boston-maps.svg
-      - title: Tableau
-        url: https://dashboard.boston.gov/
-        icon: https://assets.boston.gov/images/access_boston/Tableau.png
-        groups:
-          - SG_AB_TABLEAU
       - title: BAIS FN
         url: https://fn.boston.gov/psp/psfnprd/EMPLOYEE/ERP/h/?tab=DEFAULT
         icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg
