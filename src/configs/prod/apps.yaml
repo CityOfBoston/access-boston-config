@@ -207,6 +207,14 @@ categories:
         url: https://identity.boston.gov/identityiq/requestPsfn.jsf
         groups:
           - SG_AB_FN_LIASONS_USERS
+      - title: Miro
+        url: https://miro.com/
+        agencies:
+          - BPDA
+      - title: RMA Resources
+        url: https://bpda.app.box.com/folder/173776757244
+        agencies:
+          - BPDA
 
   - title: Account Tools
     apps:
