@@ -176,6 +176,13 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/password-manager.svg
         groups:
           - SG_AB_WPM
+      - title: Box
+        url: https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=urn%3Asso%3Aboston.gov&TargetResource=#target_resource%23
+        icon: https://assets.boston.gov/icons/accessboston/box.svg
+        groups:
+          - SG_AB_BOX
+        agencies:
+          - BPDA
       - title: Monsido
         url: https://login.monsido.com/sso/saml/9d71243d-c204-4ee8-9601-a78549ad83d5/login
         icon: https://assets.boston.gov/icons/accessboston/monsido.svg
