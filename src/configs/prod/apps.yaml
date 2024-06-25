@@ -176,6 +176,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/password-manager.svg
         groups:
           - SG_AB_WPM
+      - title: Monsido
+        url: https://login.monsido.com/sso/saml/9d71243d-c204-4ee8-9601-a78549ad83d5/login
+        icon: https://assets.boston.gov/icons/accessboston/monsido.svg
+        groups:
+          - SG_AB_MONSIDO
 
   - title: Forms / Links
     apps:
