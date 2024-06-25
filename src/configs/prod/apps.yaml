@@ -176,6 +176,18 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/password-manager.svg
         groups:
           - SG_AB_WPM
+      - title: Box
+        url: https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=urn%3Asso%3Aboston.gov&TargetResource=#target_resource%23
+        icon: https://assets.boston.gov/icons/accessboston/box.svg
+        groups:
+          - SG_AB_BOX
+        agencies:
+          - BPDA
+      - title: Monsido
+        url: https://login.monsido.com/sso/saml/9d71243d-c204-4ee8-9601-a78549ad83d5/login
+        icon: https://assets.boston.gov/icons/accessboston/monsido.svg
+        groups:
+          - SG_AB_MONSIDO
 
   - title: Forms / Links
     apps:
@@ -183,6 +195,8 @@ categories:
         url: https://identity.boston.gov/identityiq/createSponsor.jsf
         groups:
           - SG_AB_SPONSOR
+        agencies:
+          - BPDA
       - title: International Travel
         url: https://goo.gl/forms/Xobh9aZeGXSnKH2m2
         groups:
@@ -191,11 +205,13 @@ categories:
           - BPD
           - BFD
           - CH
+          - BPDA
       - title: Building Maintenance
         url: https://assetessentials.dudesolutions.com/CityOfBoston/MyRequest/Add
         agencies:
           - CH
           - ASSESSING
+          - BPDA
         groups:	
           - SG_AB_BLDGMAINTREQ
           - SG_AB_ALLSPONSPONSERED
@@ -203,6 +219,14 @@ categories:
         url: https://identity.boston.gov/identityiq/requestPsfn.jsf
         groups:
           - SG_AB_FN_LIASONS_USERS
+      - title: Miro
+        url: https://miro.com/
+        agencies:
+          - BPDA
+      - title: RMA Resources
+        url: https://bpda.app.box.com/folder/173776757244
+        agencies:
+          - BPDA
 
   - title: Account Tools
     apps:
