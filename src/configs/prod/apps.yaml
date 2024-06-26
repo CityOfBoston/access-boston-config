@@ -176,6 +176,18 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/password-manager.svg
         groups:
           - SG_AB_WPM
+      - title: BPDA Salesforce
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbpda.my.salesforce.com
+        icon: https://assets.boston.gov/icons/accessboston/salesforce_white.svg
+        groups:
+          - SG_AB_BPDASALESFORCE
+        agencies:
+          - BPDA
+      - title: Office365
+        url: https://login.microsoftonline.com/?whr=bostonplans.org
+        icon: https://assets.boston.gov/icons/accessboston/O365.svg
+        agencies:
+          - BPDA
       - title: Box
         url: https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=urn%3Asso%3Aboston.gov&TargetResource=#target_resource%23
         icon: https://assets.boston.gov/icons/accessboston/box.svg
