@@ -207,6 +207,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/monsido.svg
         groups:
           - SG_AB_MONSIDO
+      - title: Genetec
+        url: https://cob-genetec.boston.gov
+        icon: https://assets.boston.gov/icons/accessboston/genetec.svg
+        groups:
+          - SG_AB_GENETEC
 
   - title: Forms / Links
     apps:
