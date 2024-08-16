@@ -202,8 +202,8 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/O365.svg
         agencies:
           - BPDA
-      - title: GIS Portal
-        url: https://gis.bostonplans.org/portal/
+      - title: GIS Hub
+        url: https://gis.bostonplans.org/portal/apps/sites/#/planning-gis-lab
         icon: https://assets.boston.gov/icons/accessboston/ArcGISPortal.svg
         groups:
           - SG_AB_BPDAAGOL
