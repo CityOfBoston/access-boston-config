@@ -188,8 +188,8 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/O365.svg
         agencies:
           - BPDA
-      - title: GIS Portal
-        url: https://gis.bostonplans.org/portal/
+      - title: GIS Hub
+        url: https://gis.bostonplans.org/portal/apps/sites/#/planning-gis-lab
         icon: https://assets.boston.gov/icons/accessboston/ArcGISPortal.svg
         groups:
           - SG_AB_BPDAAGOL
@@ -212,6 +212,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/genetec.svg
         groups:
           - SG_AB_GENETEC
+      - title: Genasys Admin
+        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbostonemployees.genasys.com%2Fsaml2%2Fservice-provider-metadata%2Fcobemployee-admin
+        icon: https://assets.boston.gov/icons/accessboston/workforce_alerts_admin.svg
+        groups:
+          - SG_AB_GENASYSADMINS
 
   - title: Forms / Links
     apps:
