@@ -231,6 +231,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/monsido.svg
         groups:
           - SG_AB_MONSIDO
+      - title: Enterprise ERP
+        url: https://tyler-cityofbostonma.okta.com/app/UserHome
+        icon: https://assets.boston.gov/icons/accessboston/enterprise_erp.svg
+        groups:
+          - SG_AB_EnterpriseERP
 
   - title: Forms / Links
     apps:
