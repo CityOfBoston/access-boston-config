@@ -217,6 +217,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/workforce_alerts_admin.svg
         groups:
           - SG_AB_GENASYSADMINS
+      - title: Enterprise ERP
+        url: https://tyler-cityofbostonma.okta.com/app/UserHome
+        icon: https://assets.boston.gov/icons/accessboston/enterprise_erp.svg
+        groups:
+          - SG_AB_EnterpriseERP
 
   - title: Forms / Links
     apps:
