@@ -12,7 +12,7 @@ categories:
         groups:
           - SG_AB_ESS
       - title: AgilePoint
-        url: https://boston.nxone.com
+        url: http://forms.boston.gov/
         icon: https://assets.boston.gov/icons/accessboston/agilepoint.svg
         groups:
           - SG_AB_AGILEPOINT
