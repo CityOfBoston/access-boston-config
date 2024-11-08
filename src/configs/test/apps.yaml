@@ -275,6 +275,8 @@ categories:
       - title: Manage My Device(s)
         url: https://desktop.pingone.com/boston-test/Selection?cmd=devices
         mfa_device_required: true
+      - title: Add a preferred/chosen name
+        url: /preferred-chosen-name
 
   - title: Support Tools
     apps:
