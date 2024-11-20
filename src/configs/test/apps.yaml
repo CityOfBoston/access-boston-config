@@ -232,6 +232,17 @@ categories:
         groups:
           - SG_AB_MONSIDO
 
+  - title: Account Tools
+    apps:
+      - title: Update Chosen Name
+        url: /preferred-chosen-name
+        target: _blank
+      - title: Change My Password
+        url: /change-password
+      - title: Manage My Device(s)
+        url: https://desktop.pingone.com/boston-test/Selection?cmd=devices
+        mfa_device_required: true
+
   - title: Forms / Links
     apps:
       - title: Create Sponsored Account
@@ -267,17 +278,6 @@ categories:
         url: https://bpda.app.box.com/folder/173776757244
         agencies:
           - BPDA
-
-  - title: Account Tools
-    apps:
-      - title: Change My Password
-        url: /change-password
-      - title: Manage My Device(s)
-        url: https://desktop.pingone.com/boston-test/Selection?cmd=devices
-        mfa_device_required: true
-      - title: Add a preferred/chosen name
-        url: /preferred-chosen-name
-        target: _blank
 
   - title: Support Tools
     apps:
