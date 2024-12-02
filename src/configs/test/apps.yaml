@@ -228,7 +228,7 @@ categories:
         groups:
           - SG_AB_MONSIDO
 
-  - title: Account Tools
+  - title: Account Settings
     apps:
       - title: Update Chosen Name
         url: /preferred-chosen-name
