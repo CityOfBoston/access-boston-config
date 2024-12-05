@@ -227,6 +227,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/monsido.svg
         groups:
           - SG_AB_MONSIDO
+      - title: BidBot
+        url: https://testbostonai.com/
+        icon: https://assets.boston.gov/icons/accessboston/BidBot.svg
+        groups:
+          - SG_AB_BIDBOT
 
   - title: Account Settings
     apps:
