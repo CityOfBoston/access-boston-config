@@ -1,3 +1,7 @@
+notice:
+  label: 'City Employees - Go Paperless'
+  pretext: ''
+  text: 'Click the ESS tile to confirm that your mailing address is correct & to go paperless for your W2, ACA and paystubs. Tax documents will be available in January.'
 categories:
   - title: Applications
     show_request_access_link: false
@@ -227,6 +231,11 @@ categories:
         icon: https://assets.boston.gov/icons/accessboston/ZenCity.svg
         groups:
           - SG_AB_ZENCITY
+      - title: Bidbot
+        url: http://bidbot.boston.gov
+        icon: https://assets.boston.gov/icons/accessboston/BidBot.svg
+        groups:
+          - SG_AB_BIDBOT
 
   - title: Forms / Links
     apps:
