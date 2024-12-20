@@ -237,6 +237,19 @@ categories:
         groups:
           - SG_AB_BIDBOT
 
+  - title: Account Setting
+    apps:
+      - title: Update Chosen Name
+        url: /preferred-chosen-name
+        target: _blank
+        exclusions:
+          - BPD
+      - title: Change My Password
+        url: /change-password
+      - title: Manage My Device(s)
+        url: https://desktop.pingone.com/boston/Selection?cmd=devices
+        mfa_device_required: true
+
   - title: Forms / Links
     apps:
       - title: Create Sponsored Account
@@ -275,19 +288,6 @@ categories:
         url: https://bpda.app.box.com/folder/173776757244
         agencies:
           - BPDA
-
-  - title: Account Setting
-    apps:
-      - title: Update Chosen Name
-        url: /preferred-chosen-name
-        target: _blank
-        exclusions:
-          - BPD
-      - title: Change My Password
-        url: /change-password
-      - title: Manage My Device(s)
-        url: https://desktop.pingone.com/boston/Selection?cmd=devices
-        mfa_device_required: true
 
   - title: Support Tools
     apps:
