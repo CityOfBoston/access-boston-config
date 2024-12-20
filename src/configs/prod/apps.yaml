@@ -237,7 +237,7 @@ categories:
         groups:
           - SG_AB_BIDBOT
 
-  - title: Account Setting
+  - title: Account Settings
     apps:
       - title: Update Chosen Name
         url: /preferred-chosen-name
