@@ -1,330 +1,489 @@
+# ==========================
+# Employee Notice Section
+# ==========================
+# This section contains important notices for employees, such as instructions 
+# for going paperless and verifying their mailing addresses.
+# It is displayed prominently to users.
+
 notice:
-  label: 'City Employees - Go Paperless'
-  pretext: ''
-  text: 'Click the ESS tile to confirm that your mailing address is correct & to go paperless for your W2, ACA and paystubs. Tax documents will be available in January.'
+  label: 'City Employees - Go Paperless'  # Title of the notice, will be visible to the users
+  pretext: ''  # Any introductory text that should appear before the main notice. Leave empty if not needed.
+  text: 'Click the ESS tile to confirm that your mailing address is correct & to go paperless for your W2, ACA and paystubs. Tax documents will be available in January.'  # Main body of the notice explaining the action required by users
+
+# ==========================
+# Application Categories Section
+# ==========================
+# This section lists the available applications for users to access.
+# Apps are grouped into categories for better organization and easy navigation.
+
 categories:
-  - title: Applications
-    show_request_access_link: false
-    icons: true
+  - title: Applications  # Main category title that groups all applications under this heading
+    show_request_access_link: false  # If true, an option for users to request access to apps will be shown. False means this option is hidden for this category.
+    icons: true  # If true, icons will be displayed next to the app names in the UI for better visual identification.
+    
+    # List of applications under this category
     apps:
-      - title: Beacon
-        url: https://beacon.boston.gov/cob
-        icon: https://assets.boston.gov/icons/accessboston/lighthouse_basic_icon.svg
-      - title: Employee Self-Service
-        url: https://ess.boston.gov/
-        icon: https://assets.boston.gov/icons/accessboston/ess.svg
+      # Each app is described with relevant details such as title, URL, icon, and groups.
+      
+      - title: Beacon  # The name of the app (Beacon). This will be displayed to the user.
+        url: https://beacon.boston.gov/cob  # The URL where the Beacon app can be accessed by the user.
+        icon: https://assets.boston.gov/icons/accessboston/lighthouse_basic_icon.svg  # URL for the app’s icon, displayed next to the app name.
+        
+      - title: Employee Self-Service  # The name of the ESS app. This is the portal where employees can manage their personal information and services.
+        url: https://ess.boston.gov/  # The URL where employees can access the ESS portal.
+        icon: https://assets.boston.gov/icons/accessboston/ess.svg  # The URL of the app’s icon to display in the user interface.
+        
+        # This section defines which user groups have access to this app.
+        # Only users belonging to these groups will be able to access the app.
         groups:
-          - SG_AB_ESS
-      - title: AgilePoint
-        url: http://forms.boston.gov/
-        icon: https://assets.boston.gov/icons/accessboston/agilepoint.svg
-        groups:
-          - SG_AB_AGILEPOINT
-      - title: Data Catalog
-        url: http://datacatalog.boston.gov
-        icon: https://assets.boston.gov/icons/accessboston/data_catalog2.svg
-        groups:
-          - SG_AB_DBT
-      - title: Security Awareness
-        url: https://boston.securityeducation.com/
-        icon: https://assets.boston.gov/icons/accessboston/proofpoint-web-security.svg
-        groups:
-          - SG_AB_PROOFPOINT
-      - title: Current Job Openings
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=icims.com&TargetResource=https%3A//employeeconnect-boston.icims.com/r.jsp
-        icon: https://assets.boston.gov/icons/accessboston/job-openings.svg
-        groups:
-          - SG_AB_ICIMS
-      - title: Current Job Openings
-        icon: https://assets.boston.gov/icons/accessboston/job-openings.svg
-        url: https://careercenter-boston.icims.com/jobs/
-        groups:
-          - SG_AB_ALLSPONSORED
-      - title: Career Center
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=icims.com
-        icon: https://assets.boston.gov/icons/accessboston/career-center.svg
-        groups:
-          - SG_AB_CAREERCTR
-      - title: BPS Job Listings
-        url: https://bostonpublicschools.tedk12.com/hire/index.aspx
-        icon: https://assets.boston.gov/icons/accessboston/talented.svg
-      - title: BAIS Training
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Flogin.frontlineeducation.com%2F
-        icon: https://assets.boston.gov/icons/accessboston/employee-training.svg
-        groups:
-          - SG_AB_MLP
-      - title: Boston Maps
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=boston.maps.arcgis.com
-        icon: https://assets.boston.gov/icons/accessboston/boston-maps.svg
-      - title: BAIS FN
-        url: https://fn.boston.gov/psp/psfnprd/EMPLOYEE/ERP/h/?tab=DEFAULT
-        icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg
-        groups:
-          - SG_AB_PSFN
-      - title: BAIS HCM
-        url: https://hcm.boston.gov/psp/pshrprd/EMPLOYEE/HRMS/h/?tab=DEFAULT
-        icon: https://assets.boston.gov/icons/accessboston/bais-hcm.svg
-        groups:
-          - SG_AB_PSHCM
-      - title: Hyperion
-        url: https://planning-a423759.pbcs.us2.oraclecloud.com/workspace
-        icon: https://assets.boston.gov/icons/accessboston/hyperion.svg
-        groups:
-          - SG_AB_HYPERION
-      - title: Civis
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fplatform.civisanalytics.com%2Fusers%2Fsaml%2Fmetadata
-        icon: https://assets.boston.gov/icons/accessboston/civis.svg
-        groups:
-          - SG_AB_CIVIS
-      - title: IIQ
-        url: https://identity.boston.gov/identityiq/
-        icon: https://assets.boston.gov/icons/accessboston/identityiq.svg
-        groups:
-          - SG_AB_IAM_TEAM
-      - title: E-Builder
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=sso.e-builder.net
-        icon: https://assets.boston.gov/icons/accessboston/e-builder.svg
-        groups:
-          - SG_AB_EBUILDER
-      - title: Riskmaster
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Frmaprdcityofboston.dxc-ins.com
-        icon: https://assets.boston.gov/icons/accessboston/Riskmaster2.svg
-        groups:
-          - SG_AB_RISKMASTER
-      - title: Asset Essentials
-        url: https://assetessentials.dudesolutions.com/CityOfBoston/
-        icon: https://assets.boston.gov/icons/accessboston/asset_essentials.svg
-        groups:
-          - SG_AB_ASSETESSENTIALS
-      - title: Edit Boston.gov
-        url: https://content.boston.gov/saml/login
-        icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg
-        groups:
-          - SG_AB_BOSTONDOTGOV
-          - SG_AB_DRUPAL_ADMIN
-          - SG_AB_DRUPAL_CONTENTEDITOR
-          - SG_AB_DRUPAL_CONTENTAUTHOR
-          - SG_AB_DRUPAL_METROAUTHOR
-          - SG_AB_DRUPAL
-      - title: Phire
-        url: https://phireprd.bais.boston.gov/psp/phire/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT
-        icon: https://assets.boston.gov/icons/accessboston/Phire.svg
-        groups:
-          - SG_AB_PHIRE
-      - title: Xybion
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fma.xybion.com%2Fsso%2Fmetadata.xml
-        icon: https://assets.boston.gov/icons/accessboston/Xybion.svg
-        groups:
-          - SG_AB_XYBION
-      - title: Gov QA
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=bostonma.govqa.us
-        icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg
-        groups:
-          - SG_AB_GOVQA
-      - title: ScerIS
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Asso%3AScerIS
-        icon: https://assets.boston.gov/icons/accessboston/sceris.svg
-        groups:
-          - SG_AB_SCERIS
-      - title: ServiceNow - Lightkeeper
-        url: https://beacon.boston.gov/
-        icon: https://assets.boston.gov/icons/accessboston/lantern.svg
-        groups:
-          - SG_AB_SNOWADMIN
-      - title: V3
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Aauth0%3Av3locity%3Abrs-prod-provider
-        icon: https://assets.boston.gov/icons/accessboston/v3.svg
-        groups:
-          - SG_AB_V3
-          - SG_AB_GRPMGMT_V3
-      - title: CyberArk
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=CN%3DCyberArk%3ACustomer%3AABE4357&TargetResource=https://bostoncybr.cyberark.cloud/privilegecloud/Accounts
-        icon: https://assets.boston.gov/icons/accessboston/cyberark.svg
-        groups:
-          - SG_AB_CYBERARK
-      - title: Tanium
-        url: https://boston.cloud.tanium.com
-        icon: https://assets.boston.gov/icons/experiential_icons/secure.svg
-        groups: 
-          - SG_AB_TANIUM
-      - title: FHE Salesforce
-        url: https://cob.my.salesforce.com
-        icon: https://assets.boston.gov/icons/experiential_icons/house_2.svg
-        groups:
-          - SG_AB_FHESALESFORCE
-      - title: Confirm ID
-        url: /confirmid
-        target: _blank
-        icon: https://assets.boston.gov/icons/accessboston/identity_verification.svg
-        groups:
-          - SG_AB_CONFIRMID
-      - title: CompAnalyst
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcompanalyst.salary.com%2Fsp
-        icon: https://assets.boston.gov/icons/accessboston/money_bills.svg
-        groups:
-          - SG_AB_COMPANALYST
-      - title: DEV boston.gov
-        url: https://d8-dev.boston.gov/saml/login
-        icon: https://assets.boston.gov/icons/accessboston/bostondotgov-dev.svg
-        groups:
-          - SG_AB_BOSTONDOTGOV_DEV
-          - SG_AB_DRUPAL_DEV
-      - title: TEST boston.gov
-        url:  https://d8-uat.boston.gov/saml/login 
-        icon: https://assets.boston.gov/icons/accessboston/bostondotgov-test.svg
-        groups:
-          - SG_AB_BOSTONDOTGOV_UAT
-          - SG_AB_DRUPAL_UAT
-      - title: Password Manager
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=CN%3DCyberArk%3ACustomer%3AABE4357
-        icon: https://assets.boston.gov/icons/accessboston/password-manager.svg
-        groups:
-          - SG_AB_WPM
-      - title: BPDA Salesforce
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbpda.my.salesforce.com
-        icon: https://assets.boston.gov/icons/accessboston/salesforce_white.svg
-        groups:
-          - SG_AB_BPDASALESFORCE
-        agencies:
-          - BPDA
-      - title: Office365
-        url: https://login.microsoftonline.com/?whr=bostonplans.org
-        icon: https://assets.boston.gov/icons/accessboston/O365.svg
-        agencies:
-          - BPDA
-      - title: GIS Hub
-        url: https://gis.bostonplans.org/portal/apps/sites/#/planning-gis-lab
-        icon: https://assets.boston.gov/icons/accessboston/ArcGISPortal.svg
-        groups:
-          - SG_AB_BPDAAGOL
-        agencies:
-          - BPDA
-      - title: Box
-        url: https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=urn%3Asso%3Aboston.gov&TargetResource=#target_resource%23
-        icon: https://assets.boston.gov/icons/accessboston/box.svg
-        groups:
-          - SG_AB_BOX
-        agencies:
-          - BPDA
-      - title: Monsido
-        url: https://login.monsido.com/sso/saml/9d71243d-c204-4ee8-9601-a78549ad83d5/login
-        icon: https://assets.boston.gov/icons/accessboston/monsido.svg
-        groups:
-          - SG_AB_MONSIDO
-      - title: Genasys Admin
-        url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbostonemployees.genasys.com%2Fsaml2%2Fservice-provider-metadata%2Fcobemployee-admin
-        icon: https://assets.boston.gov/icons/accessboston/workforce_alerts_admin.svg
-        groups:
-          - SG_AB_GENASYSADMINS
-      - title: Enterprise ERP
-        url: https://tyler-cityofbostonma.okta.com/app/UserHome
-        icon: https://assets.boston.gov/icons/accessboston/enterprise_erp.svg
-        groups:
-          - SG_AB_EnterpriseERP
-      - title: Genetec
-        url: https://cob-genetec.boston.gov/securitycenter/
-        icon: https://assets.boston.gov/icons/accessboston/genetec.svg
-        groups:
-          - SG_AB_GENETEC
-      - title: ZenCity
-        url: https://login.app.zencity.io/login/callback?connection=Boston-MA-PingFederate
-        icon: https://assets.boston.gov/icons/accessboston/ZenCity.svg
-        groups:
-          - SG_AB_ZENCITY
-      - title: Bidbot
-        url: http://bidbot.boston.gov
-        icon: https://assets.boston.gov/icons/accessboston/BidBot.svg
-        groups:
-          - SG_AB_BIDBOT
+          - SG_AB_ESS  # Group(s) with access to this app (e.g., employees assigned to the ESS group can access this app).
+          # If there are additional groups with access, they can be listed here, separated by commas.
 
-  - title: Account Settings
+      # AgilePoint Application - A tool for managing workflows and forms
+  - title: AgilePoint  # The name of the application that will be displayed to users
+    url: http://forms.boston.gov/  # URL to access the AgilePoint app
+    icon: https://assets.boston.gov/icons/accessboston/agilepoint.svg  # Icon for the AgilePoint app
+    groups:
+      - SG_AB_AGILEPOINT  # Group(s) with access to AgilePoint (only users in this group can access the app)
+
+  # Data Catalog Application - A resource for browsing and accessing data sets
+  - title: Data Catalog  # The name of the application
+    url: http://datacatalog.boston.gov  # URL for the Data Catalog app
+    icon: https://assets.boston.gov/icons/accessboston/data_catalog2.svg  # Icon for the Data Catalog app
+    groups:
+      - SG_AB_DBT  # Group(s) with access to the Data Catalog app (users in this group will have access)
+
+  # Security Awareness Application - Used to promote security best practices and awareness among employees
+  - title: Security Awareness  # The name of the app
+    url: https://boston.securityeducation.com/  # URL for the Security Awareness app
+    icon: https://assets.boston.gov/icons/accessboston/proofpoint-web-security.svg  # Icon for the Security Awareness app
+    groups:
+      - SG_AB_PROOFPOINT  # Group(s) with access to the Security Awareness app
+
+  # Current Job Openings Application - Displays current job listings available within the organization
+  - title: Current Job Openings  # The name of the app for browsing job openings
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=icims.com&TargetResource=https%3A//employeeconnect-boston.icims.com/r.jsp  # URL for the Job Openings app
+    icon: https://assets.boston.gov/icons/accessboston/job-openings.svg  # Icon for the Job Openings app
+    groups:
+      - SG_AB_ICIMS  # Group(s) with access to view job openings (this app is for specific users with this group)
+
+  # Alternative Current Job Openings Application - Another link to view job openings
+  - title: Current Job Openings  # Duplicate of the previous app, but with a different URL
+    icon: https://assets.boston.gov/icons/accessboston/job-openings.svg  # Icon for the job openings app
+    url: https://careercenter-boston.icims.com/jobs/  # Alternate URL for job listings
+    groups:
+      - SG_AB_ALLSPONSORED  # Group(s) with access to this specific job openings page
+
+  # Career Center Application - A tool for managing career development and job applications
+  - title: Career Center  # The name of the application for career management
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=icims.com  # URL for the Career Center app
+    icon: https://assets.boston.gov/icons/accessboston/career-center.svg  # Icon for the Career Center app
+    groups:
+      - SG_AB_CAREERCTR  # Group(s) with access to the Career Center app
+     # BPS Job Listings Application - For browsing job openings within Boston Public Schools
+  - title: BPS Job Listings  # The name of the application
+    url: https://bostonpublicschools.tedk12.com/hire/index.aspx  # URL to access the BPS Job Listings
+    icon: https://assets.boston.gov/icons/accessboston/talented.svg  # Icon for the BPS Job Listings app
+
+  # BAIS Training Application - For employee training related to BAIS systems
+  - title: BAIS Training  # The name of the application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Flogin.frontlineeducation.com%2F  # URL to access the BAIS Training platform
+    icon: https://assets.boston.gov/icons/accessboston/employee-training.svg  # Icon for the BAIS Training app
+    groups:
+      - SG_AB_MLP  # Group(s) with access to the BAIS Training app (users in this group will have access)
+
+  # Boston Maps Application - Interactive map tool for Boston city data
+  - title: Boston Maps  # The name of the application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=boston.maps.arcgis.com  # URL to access Boston Maps
+    icon: https://assets.boston.gov/icons/accessboston/boston-maps.svg  # Icon for the Boston Maps app
+
+  # BAIS FN (Financials) Application - Access to financial management tools for BAIS
+  - title: BAIS FN  # The name of the app for financial management within BAIS
+    url: https://fn.boston.gov/psp/psfnprd/EMPLOYEE/ERP/h/?tab=DEFAULT  # URL to access BAIS FN
+    icon: https://assets.boston.gov/icons/accessboston/bais-fn.svg  # Icon for the BAIS FN app
+    groups:
+      - SG_AB_PSFN  # Group(s) with access to BAIS FN (only users in this group can access it)
+
+  # BAIS HCM (Human Capital Management) Application - For managing HR data within BAIS
+  - title: BAIS HCM  # The name of the app for human resources management within BAIS
+    url: https://hcm.boston.gov/psp/pshrprd/EMPLOYEE/HRMS/h/?tab=DEFAULT  # URL to access BAIS HCM
+    icon: https://assets.boston.gov/icons/accessboston/bais-hcm.svg  # Icon for the BAIS HCM app
+    groups:
+      - SG_AB_PSHCM  # Group(s) with access to BAIS HCM (users in this group will have access)
+
+  # Hyperion Application - Used for budget planning and reporting
+  - title: Hyperion  # The name of the app for financial and budget planning
+    url: https://planning-a423759.pbcs.us2.oraclecloud.com/workspace  # URL for Hyperion's workspace
+    icon: https://assets.boston.gov/icons/accessboston/hyperion.svg  # Icon for the Hyperion app
+    groups:
+      - SG_AB_HYPERION  # Group(s) with access to Hyperion (only authorized users can access)
+
+  # Civis Application - For data analysis and analytics management
+  - title: Civis  # The name of the app for analytics and data analysis
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fplatform.civisanalytics.com%2Fusers%2Fsaml%2Fmetadata  # URL for Civis
+    icon: https://assets.boston.gov/icons/accessboston/civis.svg  # Icon for the Civis app
+    groups:
+      - SG_AB_CIVIS  # Group(s) with access to Civis (users in this group can access the app)
+
+  # IIQ (IdentityIQ) Application - A system for identity management
+  - title: IIQ  # The name of the app for identity management
+    url: https://identity.boston.gov/identityiq/  # URL for accessing IIQ
+    icon: https://assets.boston.gov/icons/accessboston/identityiq.svg  # Icon for the IIQ app
+    groups:
+      - SG_AB_IAM_TEAM  # Group(s) with access to IIQ (only users in this group can access it)
+
+  # E-Builder Application - For managing construction projects and budgets
+  - title: E-Builder  # The name of the app for project and budget management
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=sso.e-builder.net  # URL for accessing E-Builder
+    icon: https://assets.boston.gov/icons/accessboston/e-builder.svg  # Icon for the E-Builder app
+    groups:
+      - SG_AB_EBUILDER  # Group(s) with access to E-Builder (only users in this group can access it)
+        # Riskmaster Application - Used for risk management and tracking incidents
+  - title: Riskmaster  # The name of the Riskmaster application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Frmaprdcityofboston.dxc-ins.com  # URL to access Riskmaster
+    icon: https://assets.boston.gov/icons/accessboston/Riskmaster2.svg  # Icon for the Riskmaster app
+    groups:
+      - SG_AB_RISKMASTER  # Group(s) with access to Riskmaster (only authorized users can access)
+
+  # Asset Essentials Application - Tool for managing asset-related information
+  - title: Asset Essentials  # The name of the Asset Essentials app
+    url: https://assetessentials.dudesolutions.com/CityOfBoston/  # URL to access Asset Essentials
+    icon: https://assets.boston.gov/icons/accessboston/asset_essentials.svg  # Icon for the Asset Essentials app
+    groups:
+      - SG_AB_ASSETESSENTIALS  # Group(s) with access to Asset Essentials (only authorized users can access)
+
+  # Edit Boston.gov Application - Platform for editing and managing content on boston.gov
+  - title: Edit Boston.gov  # The name of the application for editing Boston.gov content
+    url: https://content.boston.gov/saml/login  # URL to access the editing platform for Boston.gov
+    icon: https://assets.boston.gov/icons/experiential_icons/hero_image.svg  # Icon for the Edit Boston.gov app
+    groups:
+      - SG_AB_BOSTONDOTGOV  # Group(s) with access to Edit Boston.gov (users in this group can edit Boston.gov content)
+      - SG_AB_DRUPAL_ADMIN  # Group for Drupal administrators
+      - SG_AB_DRUPAL_CONTENTEDITOR  # Group for content editors in Drupal
+      - SG_AB_DRUPAL_CONTENTAUTHOR  # Group for content authors in Drupal
+      - SG_AB_DRUPAL_METROAUTHOR  # Group for metro authors in Drupal
+      - SG_AB_DRUPAL  # General group for all Drupal users
+
+  # Phire Application - Employee portal for accessing the Phire system
+  - title: Phire  # The name of the Phire application
+    url: https://phireprd.bais.boston.gov/psp/phire/EMPLOYEE/PT_LOCAL/h/?tab=DEFAULT  # URL to access the Phire portal
+    icon: https://assets.boston.gov/icons/accessboston/Phire.svg  # Icon for the Phire app
+    groups:
+      - SG_AB_PHIRE  # Group(s) with access to Phire (only authorized users can access)
+
+  # Xybion Application - A platform for managing scientific data
+  - title: Xybion  # The name of the Xybion app
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fma.xybion.com%2Fsso%2Fmetadata.xml  # URL to access Xybion
+    icon: https://assets.boston.gov/icons/accessboston/Xybion.svg  # Icon for the Xybion app
+    groups:
+      - SG_AB_XYBION  # Group(s) with access to Xybion (only authorized users can access)
+
+  # Gov QA Application - Tool for quality assurance and feedback management
+  - title: Gov QA  # The name of the Gov QA application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=bostonma.govqa.us  # URL to access Gov QA
+    icon: https://assets.boston.gov/icons/accessboston/gov_qa.svg  # Icon for the Gov QA app
+    groups:
+      - SG_AB_GOVQA  # Group(s) with access to Gov QA (only authorized users can access)
+
+  # ScerIS Application - Electronic records management and document storage
+  - title: ScerIS  # The name of the ScerIS application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Asso%3AScerIS  # URL to access ScerIS
+    icon: https://assets.boston.gov/icons/accessboston/sceris.svg  # Icon for the ScerIS app
+    groups:
+      - SG_AB_SCERIS  # Group(s) with access to ScerIS (only authorized users can access)
+
+  # ServiceNow - Lightkeeper Application - IT service management tool
+  - title: ServiceNow - Lightkeeper  # The name of the ServiceNow Lightkeeper app
+    url: https://beacon.boston.gov/  # URL to access the Lightkeeper service
+    icon: https://assets.boston.gov/icons/accessboston/lantern.svg  # Icon for the ServiceNow Lightkeeper app
+    groups:
+      - SG_AB_SNOWADMIN  # Group(s) with access to ServiceNow Lightkeeper (only authorized admin users can access)
+
+  # V3 Application - Tool for managing business processes and automation
+  - title: V3  # The name of the V3 application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=urn%3Aauth0%3Av3locity%3Abrs-prod-provider  # URL to access V3
+    icon: https://assets.boston.gov/icons/accessboston/v3.svg  # Icon for the V3 app
+    groups:
+      - SG_AB_V3  # Group(s) with access to V3 (only authorized users can access)
+      - SG_AB_GRPMGMT_V3  # Group for V3 group management users
+
+  # CyberArk Application - Identity management and privileged access security
+  - title: CyberArk  # The name of the CyberArk application
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=CN%3DCyberArk%3ACustomer%3AABE4357&TargetResource=https://bostoncybr.cyberark.cloud/privilegecloud/Accounts  # URL for CyberArk access
+    icon: https://assets.boston.gov/icons/accessboston/cyberark.svg  # Icon for the CyberArk app
+    groups:
+      - SG_AB_CYBERARK  # Group(s) with access to CyberArk (only authorized users can access)
+
+  # Tanium Application - Endpoint management and security platform
+  - title: Tanium  # The name of the Tanium app
+    url: https://boston.cloud.tanium.com  # URL to access Tanium
+    icon: https://assets.boston.gov/icons/experiential_icons/secure.svg  # Icon for the Tanium app
+    groups:
+      - SG_AB_TANIUM  # Group(s) with access to Tanium (only authorized users can access)
+
+  # FHE Salesforce Application - Salesforce platform for FHE management
+  - title: FHE Salesforce  # The name of the FHE Salesforce app
+    url: https://cob.my.salesforce.com  # URL to access FHE Salesforce
+    icon: https://assets.boston.gov/icons/experiential_icons/house_2.svg  # Icon for the FHE Salesforce app
+    groups:
+      - SG_AB_FHESALESFORCE  # Group(s) with access to FHE Salesforce (only authorized users can access)
+
+  # Confirm ID Application - Identity verification platform
+  - title: Confirm ID  # The name of the Confirm ID app
+    url: /confirmid  # URL to access Confirm ID
+    target: _blank  # Opens in a new tab
+    icon: https://assets.boston.gov/icons/accessboston/identity_verification.svg  # Icon for the Confirm ID app
+    groups:
+      - SG_AB_CONFIRMID  # Group(s) with access to Confirm ID (only authorized users can access)
+     # CompAnalyst Application - Compensation analysis and benchmarking tool
+   # ==========================
+# Application Configuration Section
+# ==========================
+# This section lists various applications available to employees.
+# Each app has its own title, URL, icon, and the user groups that are allowed access.
+# We include detailed comments to help with understanding the app's purpose and its access control.
+
+# CompAnalyst Application - Compensation analysis and benchmarking tool
+
+  - title: CompAnalyst  # The name of the CompAnalyst app
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fcompanalyst.salary.com%2Fsp  # URL to access CompAnalyst
+    icon: https://assets.boston.gov/icons/accessboston/money_bills.svg  # Icon for the CompAnalyst app
+    groups:
+      - SG_AB_COMPANALYST  # Group(s) with access to CompAnalyst (only authorized users can access)
+
+  # DEV boston.gov Application - Development environment for Boston.gov
+  - title: DEV boston.gov  # The name of the DEV Boston.gov app
+    url: https://d8-dev.boston.gov/saml/login  # URL to access the DEV Boston.gov environment
+    icon: https://assets.boston.gov/icons/accessboston/bostondotgov-dev.svg  # Icon for the DEV Boston.gov app
+    groups:
+      - SG_AB_BOSTONDOTGOV_DEV  # Group(s) with access to DEV Boston.gov (development team members)
+      - SG_AB_DRUPAL_DEV  # Group for Drupal developers in the DEV environment
+
+  # TEST boston.gov Application - Testing environment for Boston.gov
+  - title: TEST boston.gov  # The name of the TEST Boston.gov app
+    url: https://d8-uat.boston.gov/saml/login  # URL to access the TEST Boston.gov environment
+    icon: https://assets.boston.gov/icons/accessboston/bostondotgov-test.svg  # Icon for the TEST Boston.gov app
+    groups:
+      - SG_AB_BOSTONDOTGOV_UAT  # Group(s) with access to TEST Boston.gov (QA and testing team)
+      - SG_AB_DRUPAL_UAT  # Group for Drupal testers in the TEST environment
+
+  # Password Manager Application - For managing passwords and security
+  - title: Password Manager  # The name of the Password Manager app
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=CN%3DCyberArk%3ACustomer%3AABE4357  # URL to access the Password Manager
+    icon: https://assets.boston.gov/icons/accessboston/password-manager.svg  # Icon for the Password Manager app
+    groups:
+      - SG_AB_WPM  # Group(s) with access to Password Manager (admin access required)
+
+  # BPDA Salesforce Application - Salesforce for BPDA management
+  - title: BPDA Salesforce  # The name of the BPDA Salesforce app
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbpda.my.salesforce.com  # URL to access BPDA Salesforce
+    icon: https://assets.boston.gov/icons/accessboston/salesforce_white.svg  # Icon for the BPDA Salesforce app
+    groups:
+      - SG_AB_BPDASALESFORCE  # Group(s) with access to BPDA Salesforce (BPDA staff)
+    agencies:
+      - BPDA  # Only available to BPDA users
+
+  # Office365 Application - Office 365 for BPDA staff
+  - title: Office365  # The name of the Office365 app
+    url: https://login.microsoftonline.com/?whr=bostonplans.org  # URL to access Office365
+    icon: https://assets.boston.gov/icons/accessboston/O365.svg  # Icon for the Office365 app
+    agencies:
+      - BPDA  # Only available to BPDA users
+
+  # GIS Hub Application - Platform for Geographic Information System (GIS) data
+  - title: GIS Hub  # The name of the GIS Hub app
+    url: https://gis.bostonplans.org/portal/apps/sites/#/planning-gis-lab  # URL to access the GIS Hub
+    icon: https://assets.boston.gov/icons/accessboston/ArcGISPortal.svg  # Icon for the GIS Hub app
+    groups:
+      - SG_AB_BPDAAGOL  # Group(s) with access to GIS Hub (GIS and planning staff)
+    agencies:
+      - BPDA  # Only available to BPDA users
+
+  # Box Application - Cloud storage and file sharing service
+  - title: Box  # The name of the Box app
+    url: https://sso.services.box.net/sp/startSSO.ping?PartnerIdpId=urn%3Asso%3Aboston.gov&TargetResource=#target_resource%23  # URL to access Box
+    icon: https://assets.boston.gov/icons/accessboston/box.svg  # Icon for the Box app
+    groups:
+      - SG_AB_BOX  # Group(s) with access to Box (BPDA staff)
+    agencies:
+      - BPDA  # Only available to BPDA users
+
+  # Monsido Application - Website quality and accessibility management tool
+  - title: Monsido  # The name of the Monsido app
+    url: https://login.monsido.com/sso/saml/9d71243d-c204-4ee8-9601-a78549ad83d5/login  # URL to access Monsido
+    icon: https://assets.boston.gov/icons/accessboston/monsido.svg  # Icon for the Monsido app
+    groups:
+      - SG_AB_MONSIDO  # Group(s) with access to Monsido (web team and administrators)
+
+  # Genasys Admin Application - Platform for emergency notifications and alerts
+  - title: Genasys Admin  # The name of the Genasys Admin app
+    url: https://sso.boston.gov/idp/startSSO.ping?PartnerSpId=https%3A%2F%2Fbostonemployees.genasys.com%2Fsaml2%2Fservice-provider-metadata%2Fcobemployee-admin  # URL to access Genasys Admin
+    icon: https://assets.boston.gov/icons/accessboston/workforce_alerts_admin.svg  # Icon for the Genasys Admin app
+    groups:
+      - SG_AB_GENASYSADMINS  # Group(s) with access to Genasys Admin (administrators)
+
+  # Enterprise ERP Application - Enterprise Resource Planning system for BPDA
+  - title: Enterprise ERP  # The name of the Enterprise ERP app
+    url: https://tyler-cityofbostonma.okta.com/app/UserHome  # URL to access Enterprise ERP
+    icon: https://assets.boston.gov/icons/accessboston/enterprise_erp.svg  # Icon for the Enterprise ERP app
+    groups:
+      - SG_AB_EnterpriseERP  # Group(s) with access to Enterprise ERP (staff managing ERP)
+
+  # Genetec Application - Security management and video surveillance system
+  - title: Genetec  # The name of the Genetec app
+    url: https://cob-genetec.boston.gov/securitycenter/  # URL to access Genetec
+    icon: https://assets.boston.gov/icons/accessboston/genetec.svg  # Icon for the Genetec app
+    groups:
+      - SG_AB_GENETEC  # Group(s) with access to Genetec (security team)
+     # ==========================
+# Application Configuration Section
+# ==========================
+# This section lists various applications available to employees.
+# Each app has its own title, URL, icon, and the user groups that are allowed access.
+# We include detailed comments to help with understanding the app's purpose and its access control.
+
+apps:
+  # ZenCity Application - City management and engagement tool
+  - title: ZenCity  # The name of the ZenCity app
+    url: https://login.app.zencity.io/login/callback?connection=Boston-MA-PingFederate  # URL to access ZenCity
+    icon: https://assets.boston.gov/icons/accessboston/ZenCity.svg  # Icon for the ZenCity app
+    groups:
+      - SG_AB_ZENCITY  # Group(s) with access to ZenCity (city engagement team)
+
+  # Bidbot Application - Automated bidding tool for Boston government projects
+  - title: Bidbot  # The name of the Bidbot app
+    url: http://bidbot.boston.gov  # URL to access Bidbot
+    icon: https://assets.boston.gov/icons/accessboston/BidBot.svg  # Icon for the Bidbot app
+    groups:
+      - SG_AB_BIDBOT  # Group(s) with access to Bidbot (procurement and bidding team)
+
+  # Account Settings Section - Manage personal account settings
+  - title: Account Settings  # The section for managing account settings
     apps:
-      - title: Update Chosen Name
-        url: /preferred-chosen-name
-        target: _blank
+      # Update Chosen Name Application - Update personal name in system
+      - title: Update Chosen Name  # The name of the update chosen name app
+        url: /preferred-chosen-name  # URL to access the Update Chosen Name form
+        target: _blank  # Open in a new tab
         exclusions:
-          - BPD
-      - title: Change My Password
-        url: /change-password
-      - title: Manage My Device(s)
-        url: https://desktop.pingone.com/boston/Selection?cmd=devices
-        mfa_device_required: true
+          - BPD  # Exclude the Boston Police Department from accessing this feature
 
-  - title: Forms / Links
+      # Change My Password Application - Tool for updating passwords
+      - title: Change My Password  # The name of the change password app
+        url: /change-password  # URL to access the Change Password form
+
+      # Manage My Device(s) Application - Manage connected devices with MFA requirement
+      - title: Manage My Device(s)  # The name of the manage devices app
+        url: https://desktop.pingone.com/boston/Selection?cmd=devices  # URL to manage devices
+        mfa_device_required: true  # Require multi-factor authentication for device management
+
+  # Forms / Links Section - Various forms and links for employee use
+  - title: Forms / Links  # The section for managing forms and links
     apps:
-      - title: Create Sponsored Account
-        url: https://identity.boston.gov/identityiq/createSponsor.jsf
+      # Create Sponsored Account Application - Sponsored account creation tool
+      - title: Create Sponsored Account  # The name of the create sponsored account app
+        url: https://identity.boston.gov/identityiq/createSponsor.jsf  # URL to access the sponsored account creation form
         groups:
-          - SG_AB_SPONSOR
+          - SG_AB_SPONSOR  # Group(s) with access to create sponsored accounts
         agencies:
-          - BPDA
-      - title: International Travel
-        url: https://goo.gl/forms/Xobh9aZeGXSnKH2m2
-        groups:
-          - SG_AB_ALLSPONSPONSERED
-        agencies:
-          - BPD
-          - BFD
-          - CH
-          - BPDA
-      - title: Building Maintenance
-        url: https://assetessentials.dudesolutions.com/CityOfBoston/MyRequest/Add
-        agencies:
-          - CH
-          - ASSESSING
-          - BPDA
-        groups:	
-          - SG_AB_BLDGMAINTREQ
-          - SG_AB_ALLSPONSPONSERED
-      - title: Request FN Access
-        url: https://identity.boston.gov/identityiq/requestPsfn.jsf
-        groups:
-          - SG_AB_FN_LIASONS_USERS
-      - title: Miro
-        url: https://miro.com/
-        agencies:
-          - BPDA
-      - title: RMA Resources
-        url: https://bpda.app.box.com/folder/173776757244
-        agencies:
-          - BPDA
+          - BPDA  # Only available to BPDA users
 
-  - title: Support Tools
-    apps:
-      - title: Identity Verification
-        url: https://identity.boston.gov/identityiq/identityVerification.jsf
+      # International Travel Form - Form for international travel requests
+      - title: International Travel  # The name of the international travel form
+        url: https://goo.gl/forms/Xobh9aZeGXSnKH2m2  # URL to access the international travel form
         groups:
-          - SG_AB_SERVICEDESK_USERS
-      - title: View User Information
-        url: https://identity.boston.gov/identityiq/viewUserIdentityonly.jsf
-        groups:
-          - SG_AB_SERVICEDESK_USERS
-          - SG_AB_ALLSPONSPONSERED
-          - SG_AB_IIQ_VIEWIDENTITY
-      - title: Edit Group
-        url: "#"
-        groups:
-          - SG_AB_HCMSECURITY
-      - title: Group Management
-        url: /group-management
-        target: _blank
+          - SG_AB_ALLSPONSPONSERED  # Group(s) with access to international travel requests
+        agencies:
+          - BPD  # Available to Boston Police Department (BPD) users
+          - BFD  # Available to Boston Fire Department (BFD) users
+          - CH  # Available to City Hall users
+          - BPDA  # Available to BPDA users
 
-  - title: Manager Tools
-    apps:
-      - title: Set an Access Boston Delegate
-        url: https://identity.boston.gov/identityiq/dashboard/identityPreferences.jsf#/identityPreferences
+      # Building Maintenance Request Application - Request for building maintenance
+      - title: Building Maintenance  # The name of the building maintenance request app
+        url: https://assetessentials.dudesolutions.com/CityOfBoston/MyRequest/Add  # URL to access the maintenance request form
+        agencies:
+          - CH  # Available to City Hall users
+          - ASSESSING  # Available to Assessing Department users
+          - BPDA  # Available to BPDA users
         groups:
-          - SG_AB_MANAGER
-          - SG_AB_TRAINING_TEAM
-          - SG_AB_FN_LIASONS_USERS
-      - title: My Access Boston Approvals
-        url: https://identity.boston.gov/identityiq/workitem/workItems.jsf#/workItems
-        groups:
-          - SG_AB_MANAGER
-          - SG_AB_TRAINING_TEAM
-          - SG_AB_FN_LIASONS_USERS
-      - title: Manage Sponsored Account
-        url: https://identity.boston.gov/identityiq/extendSponsor.jsf
-        groups:
-          - SG_AB_SPONSOR
+          - SG_AB_BLDGMAINTREQ  # Group(s) with access to building maintenance requests
+          - SG_AB_ALLSPONSPONSERED  # Group(s) with access to sponsored users
 
+      # Request FN Access Application - Request for FN access
+      - title: Request FN Access  # The name of the FN access request app
+        url: https://identity.boston.gov/identityiq/requestPsfn.jsf  # URL to access the FN access request form
+        groups:
+          - SG_AB_FN_LIASONS_USERS  # Group(s) with access to FN access requests
+
+      # Miro Application - Visual collaboration and brainstorming tool
+      - title: Miro  # The name of the Miro app
+        url: https://miro.com/  # URL to access Miro
+        agencies:
+          - BPDA  # Available to BPDA users only
+
+      # RMA Resources Application - Resources for BPDA staff
+      - title: RMA Resources  # The name of the RMA Resources app
+        url: https://bpda.app.box.com/folder/173776757244  # URL to access BPDA RMA resources
+        agencies:
+          - BPDA  # Available to BPDA users only
+
+ # ==========================
+# Support Tools Section
+# ==========================
+# This section includes tools for user support and group management.
+
+- title: Support Tools  # Title of the section for support tools
+  apps:
+    # Identity Verification Tool - Used by service desk users for identity verification
+    - title: Identity Verification  # The name of the identity verification app
+      url: https://identity.boston.gov/identityiq/identityVerification.jsf  # URL to access identity verification
+      groups:
+        - SG_AB_SERVICEDESK_USERS  # Group(s) with access to this tool
+
+    # View User Information Tool - Allows viewing user details for service desk and sponsored users
+    - title: View User Information  # The name of the view user information app
+      url: https://identity.boston.gov/identityiq/viewUserIdentityonly.jsf  # URL to access user information
+      groups:
+        - SG_AB_SERVICEDESK_USERS  # Service desk users group
+        - SG_AB_ALLSPONSPONSERED  # Sponsored users group
+        - SG_AB_IIQ_VIEWIDENTITY  # Group with access to view identity information
+
+    # Edit Group Tool - Allows editing of groups (for specific users with permissions)
+    - title: Edit Group  # The name of the edit group tool
+      url: "#"  # Placeholder URL for editing groups
+      groups:
+        - SG_AB_HCMSECURITY  # Group(s) with access to edit groups
+
+    # Group Management Tool - A tool for managing groups (opens in a new tab)
+    - title: Group Management  # The name of the group management app
+      url: /group-management  # URL to access group management
+      target: _blank  # Open in a new tab
+
+# ==========================
+# Manager Tools Section
+# ==========================
+# This section includes tools for managers to manage user access and approvals.
+
+- title: Manager Tools  # Title of the section for manager tools
+  apps:
+    # Set an Access Boston Delegate - For managers to set their delegate for Access Boston
+    - title: Set an Access Boston Delegate  # The name of the delegate setup app
+      url: https://identity.boston.gov/identityiq/dashboard/identityPreferences.jsf#/identityPreferences  # URL to set delegate
+      groups:
+        - SG_AB_MANAGER  # Managers with access to set a delegate
+        - SG_AB_TRAINING_TEAM  # Training team with access to set a delegate
+        - SG_AB_FN_LIASONS_USERS  # FN liaisons users group
+
+    # My Access Boston Approvals - For managers to view and approve Access Boston requests
+    - title: My Access Boston Approvals  # The name of the approval management app
+      url: https://identity.boston.gov/identityiq/workitem/workItems.jsf#/workItems  # URL to manage approvals
+      groups:
+        - SG_AB_MANAGER  # Managers with access to manage approvals
+        - SG_AB_TRAINING_TEAM  # Training team with access to approvals
+        - SG_AB_FN_LIASONS_USERS  # FN liaisons users group
+
+    # Manage Sponsored Account - For managers to manage sponsored accounts
+    - title: Manage Sponsored Account  # The name of the sponsored account management app
+      url: https://identity.boston.gov/identityiq/extendSponsor.jsf  # URL to manage sponsored accounts
+      groups:
+        - SG_AB_SPONSOR  # Sponsored users group with access to manage accounts
